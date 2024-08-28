@@ -1,0 +1,9 @@
+<project  default="main">
+
+    <taskdef name="mytask" classname="com.mydomain.MyAntTask" classpath="C:\HOME\prj\JavaPrj\AntTask\AntTask.jar"/>
+
+    <target name="main">
+        <mytask message="Hello World! MyAntTask works!"/>
+    </target>
+
+</project>
