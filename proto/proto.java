@@ -27,5 +27,13 @@ public class proto {
         treeSet.addAll(mySet);
 
         System.out.println("TreeSet elements: " + treeSet);
+
+        TreeMap<String, Integer> treeMap = new TreeMap<>();
+
+        treeMap.put("A", 1); // O(log n)
+        treeMap.put("C", 3); // O(log n)
+        treeMap.put("B", 2); // O(log n)
+                             // 
+        System.out.println("TreeMap elements: " + treeMap);
     }
 }
