@@ -1,0 +1,11 @@
+<project  default="run">
+
+    <target name="run">
+        <exec executable="cmd">
+            <arg value="/c"/>
+            <arg value="C:/HOME/prj/JavaPrj/proto/g.bat"/>
+            <arg value="-p"/>
+        </exec>
+    </target>
+
+</project>
