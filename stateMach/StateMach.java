@@ -2,10 +2,7 @@ import java.util.Scanner;
 
 public class StateMach {
 
-
-
     enum State {
-        INIT, 
         ONE ,
         TWO ,
         THREE,
@@ -17,19 +14,41 @@ public class StateMach {
     {
         System.out.println("doOne");
     }
-
-    void doInit()
+    void doTwo()
     {
-        System.out.println("doInit");
+        System.out.println("doTwo");
+    }
+    void doThree()
+    {
+        System.out.println("doThree");
+    }
+    void doFour()
+    {
+        System.out.println("doFour");
+    }
+
+    void doFive()
+    {
+        System.out.println("doFive");
     }
 
     void doState(State state){
         switch (state) {
-        case INIT:
-            doInit();
-            break;
+        
         case ONE:
             doOne();
+            break;
+        case TWO:
+            doTwo();
+            break;
+        case THREE:
+            doThree();
+            break;
+        case FOUR:
+            doFour();
+            break;
+        case FIVE:
+            doFive();
             break;
         default:
             break;
@@ -43,7 +62,7 @@ public class StateMach {
 
         while (true) {
             for (State state : State.values()) {
-                System.out.println(state);
+                System.out.println("state="+state.name());
                 System.out.println("hit enter");
                 scan.nextLine();
                 stateMach.doState(state);
