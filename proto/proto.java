@@ -3,37 +3,71 @@ import java.util.*;
 
 public class proto {
 
-    public static void main(String args[]) {
-        // LinkedList list=new LinkedList();
-        // ArrayList list=new ArrayList();
-        Hashtable table = new Hashtable();
-        TreeSet treeSet= new TreeSet();
+    enum DayName {
+        MODAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY
+    }
 
-        for (int y=0;y<10;y++)
-            for (int x=0;x<10;x++) {
-                table.put(x,y);
-            }
-        table.put(5,"hello");
-        System.out.print(table);
-        System.out.println();
+    static <T> List<T> enumValuesInList(Class<T> enumCls) {
+        T[] arr = enumCls.getEnumConstants();
+        return arr == null ? Collections.emptyList() : Arrays.asList(arr);
+    }
 
-        Set mySet=table.keySet();
-
-        for (int x=0;x<mySet.size();x++) {
-            System.out.print(table.get(x));
-        }
-        System.out.println();
-
-        treeSet.addAll(mySet);
-
-        System.out.println("TreeSet elements: " + treeSet);
-
+    void mapTest()
+    {
         TreeMap<String, Integer> treeMap = new TreeMap<>();
 
-        treeMap.put("A", 1); // O(log n)
-        treeMap.put("C", 3); // O(log n)
-        treeMap.put("B", 2); // O(log n)
-                             // 
+        treeMap.put("A", 1); 
+        treeMap.put("C", 3); 
+        treeMap.put("B", 2);
+
         System.out.println("TreeMap elements: " + treeMap);
+
+//**************************************************** 
+
+        HashMap<String, Integer> languages = new HashMap<>();
+
+        languages.put("Java", 8);
+        languages.put("JavaScript", 1);
+        languages.put("Python", 3);
+
+        System.out.println("HashMap: " + languages);
+
+//****************************************************
+
+        Hashtable<String,String> myTable = new Hashtable<>();
+
+        myTable.put("Java", "one");
+        myTable.put("JavaScript", "two");
+        myTable.put("Python", "three");
+
+        System.out.println("Hashtable: " + myTable);
     }
+
+    void listTest()
+    {
+        LinkedList myLList=new LinkedList(enumValuesInList(DayName.class));
+        System.out.println("LinkedList: " + myLList);
+
+//****************************************************
+
+        ArrayList myAList=new ArrayList(enumValuesInList(DayName.class));
+        System.out.println("ArrayList: " + myAList);
+
+//****************************************************
+
+        TreeSet myTreeSet= new TreeSet(enumValuesInList(DayName.class));
+        System.out.println("TreeSet: " + myTreeSet);
+
+
+    }
+
+    public static void main(String args[]) {
+        proto myproto=new proto();
+
+        myproto.mapTest();
+
+        myproto.listTest();
+    }
+
+
 }
