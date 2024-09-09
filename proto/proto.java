@@ -58,7 +58,15 @@ public class proto {
         TreeSet myTreeSet= new TreeSet(enumValuesInList(DayName.class));
         System.out.println("TreeSet: " + myTreeSet);
 
+//****************************************************
 
+        Collections.reverse(myLList);
+        System.out.println("Reversed LinkedList: " + myLList);
+
+//****************************************************
+
+        Collections.sort(myLList);
+        System.out.println("Sort LinkedList: " + myLList);
     }
 
     public static void main(String args[]) {
