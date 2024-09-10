@@ -67,6 +67,12 @@ public class proto {
 
         Collections.sort(myLList);
         System.out.println("Sort LinkedList: " + myLList);
+
+//****************************************************
+        Random rand=new Random(011235);
+
+        Collections.shuffle(myLList,rand);
+        System.out.println("Shuffle LinkedList: " + myLList);
     }
 
     public static void main(String args[]) {
