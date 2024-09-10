@@ -73,6 +73,12 @@ public class proto {
 
         Collections.shuffle(myLList,rand);
         System.out.println("Shuffle LinkedList: " + myLList);
+
+//****************************************************
+
+        int result =Collections.binarySearch(myLList,DayName.FRIDAY);
+        System.out.println("result: " + result);
+
     }
 
     public static void main(String args[]) {
