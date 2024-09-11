@@ -76,8 +76,15 @@ public class proto {
 
 //****************************************************
 
-        int result =Collections.binarySearch(myLList,DayName.FRIDAY);
+        int result =Collections.binarySearch(myLList,DayName.WEDNESDAY);
         System.out.println("result: " + result);
+
+        for (Object obj : myLList ) {
+
+            result =Collections.binarySearch(myLList,(DayName)obj);
+            System.out.print((DayName)obj);
+            System.out.println("="+Integer.toString(result));
+        }
 
     }
 
