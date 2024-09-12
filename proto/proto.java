@@ -86,6 +86,10 @@ public class proto {
             System.out.println("="+Integer.toString(result));
         }
 
+        EnumSet<DayName> myEnumSet = EnumSet.allOf(DayName.class);
+
+        System.out.println("myEnumSet: " + myEnumSet);
+
     }
 
     public static void main(String args[]) {
