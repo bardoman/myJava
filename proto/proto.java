@@ -4,8 +4,7 @@ import java.util.*;
 public class proto {
 
     enum DayName {
-        MODAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY
-    }
+        MODAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY}
 
     static <T> List<T> enumValuesInList(Class<T> enumCls) {
         T[] arr = enumCls.getEnumConstants();
@@ -87,7 +86,6 @@ public class proto {
         }
 
         EnumSet<DayName> myEnumSet = EnumSet.allOf(DayName.class);
-
         System.out.println("myEnumSet: " + myEnumSet);
 
     }
