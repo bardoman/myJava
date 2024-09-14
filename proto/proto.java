@@ -5,6 +5,8 @@ public class proto {
 
     enum DayName {
         MODAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY}
+    enum Cards {
+        KING,QUEEN,JACK,TEN,NINE,EIGHT,SEVEN,SIX,FIVE,FOUR,THREE,TWO,ONE}
 
     static <T> List<T> enumValuesInList(Class<T> enumCls) {
         T[] arr = enumCls.getEnumConstants();
@@ -88,6 +90,20 @@ public class proto {
         EnumSet<DayName> myEnumSet = EnumSet.allOf(DayName.class);
         System.out.println("myEnumSet: " + myEnumSet);
 
+        ArrayList myCards=new ArrayList(enumValuesInList(Cards.class));
+        System.out.println("Cards: " + myCards);
+
+        for (Object obj: myCards) {
+
+            Collections.shuffle(myCards,rand);
+            System.out.println("Cards: " + myCards);
+        }
+/*
+             enumValuesInList(DayName.class));
+        System.out.println("ArrayList: " + myAList);
+
+        Collections.shuffle(myEnumSet,rand);
+*/
     }
 
     public static void main(String args[]) {
