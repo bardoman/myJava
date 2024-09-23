@@ -98,6 +98,11 @@ public class proto {
             Collections.shuffle(myCards,rand);
             System.out.println("Cards: " + myCards);
         }
+
+//****************************************************
+
+        Collections.sort(myCards);
+        System.out.println("Sort myCards: " + myCards);
 /*
              enumValuesInList(DayName.class));
         System.out.println("ArrayList: " + myAList);
