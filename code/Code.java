@@ -7,6 +7,7 @@ public class Code {
     int alphaSize =36;
     char alphaMap[][]=new char[alphaSize][alphaSize];
     String alphaMapFileName="AlphaMap.txt";
+    int cyclicKeyIndex=0;
     String cyclicKey="U90N4BWUP7W174NU91Y571CK";
     char[] baseSet = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 
@@ -127,25 +128,37 @@ public class Code {
             n++;
         }
     }
+/*
+    char [] getCurrentAlphaRow()
+    {  
+     //   char ch=cyclicKey.indexOf[cyclicKeyIndex];
+     //   int rowResult= Arrays.binarySearch(baseSet, ch);
+
+      //  alphaMap[rowResult
+
+
+
+    }*/
 
     char encodeChar(char ch)
     {
+
         char tmpRow[]=baseSet;
         int colResult= Arrays.binarySearch(tmpRow, ch);
 
-        //      alphaMap[colResult,
+        //ch= alphaMap[colResult,];
         return ch;
 
     }
+
     char [] encodeRow(char inRow[])
     {
         char tmpRow[]=new char[inRow.length];
         int n=0;
         for (char ch:inRow) {
-            tmpRow[n]=ch;
+            tmpRow[n]=encodeChar(ch);
             n++;
         }
-
         return tmpRow;
     }
 
