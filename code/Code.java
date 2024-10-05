@@ -5,11 +5,12 @@ import java.nio.charset.StandardCharsets;
 public class Code {
     char byteMap[][];
     char encodedMap[][];
+    char decodeMap[][];
     int alphaSize =36;
     char alphaMap[][]=new char[alphaSize][alphaSize];
     String alphaMapFileName="AlphaMap.txt";
     int cyclicKeyIndex=0;
-    String cyclicKey="U90N4BWUP7W174NU91Y571CK";
+    String cyclicKey="SIMPLEKEY";
     char[] baseSet = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     // Implementing Fisher–Yates shuffle
@@ -27,19 +28,7 @@ public class Code {
         }
         return options;
     }
-/*
-    char [] getRandCharArray()
-    {   
-        char options[]=new char[alphaSize];
-        options = Arrays.copyOf(baseSet, alphaSize);
-        char[] result = new char[alphaSize];
-        Random r=new Random();
-        for (int i=0;i<result.length;i++) {
-            result[i]=options[r.nextInt(options.length)];
-        }
-        return result;
-    }
-*/
+
     void saveAlphaMap()throws Exception{
         File tempFile=new File(alphaMapFileName);
         if (!tempFile.exists()) {
@@ -53,7 +42,6 @@ public class Code {
             }
             buffWr.close();   
         }
-
     }
 
     void readAlphaMap()throws Exception{
@@ -72,7 +60,6 @@ public class Code {
             }
             buffRd.close();   
         }
-
     }
 
     void setupAlphaMap()throws Exception
@@ -119,7 +106,6 @@ public class Code {
         return outAray;
     }
 
-
     void putCol(int colNum, char row[])
     {
         int rowSize=row.length;
@@ -153,12 +139,34 @@ public class Code {
         return encodedChar;
     }
 
+    char decodeChar(char ch)
+    {
+        int colIndex= Arrays.binarySearch(baseSet, ch);
+
+        char alphaRow[]=getCurrentAlphaRow();
+
+        char encodedChar= alphaRow[colIndex];
+
+        return encodedChar;
+    }
+
     char [] encodeRow(char inRow[])
     {
         char tmpRow[]=new char[inRow.length];
         int n=0;
         for (char ch:inRow) {
             tmpRow[n]=encodeChar(ch);
+            n++;
+        }
+        return tmpRow;
+    }
+
+    char [] decodeRow(char inRow[])
+    {
+        char tmpRow[]=new char[inRow.length];
+        int n=0;
+        for (char ch:inRow) {
+            tmpRow[n]=decodeChar(ch);
             n++;
         }
         return tmpRow;
@@ -171,7 +179,17 @@ public class Code {
         for (char row[]:inMap) {
             tmpMap[n]=encodeRow(row);
             n++;
-         //   System.out.println(row); 
+        }
+        return tmpMap;
+    }
+
+    char [][] decodeMap(char inMap[][])
+    {
+        int n=0;
+        char tmpMap[][]=new char[inMap.length][inMap.length];
+        for (char row[]:inMap) {
+            tmpMap[n]=decodeRow(row);
+            n++;
         }
         return tmpMap;
     }
