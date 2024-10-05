@@ -135,10 +135,9 @@ public class Code {
         char ch=cyclicKey.charAt(cyclicKeyIndex);
         int rowIndex= Arrays.binarySearch(baseSet, ch);
 
-        if (cyclicKeyIndex==cyclicKey.length()) {
+        if (cyclicKeyIndex==cyclicKey.length()-1) {
             cyclicKeyIndex=0;
-        }
-        else cyclicKeyIndex++;
+        } else cyclicKeyIndex++;
 
         return alphaMap[rowIndex];
     }
@@ -172,7 +171,7 @@ public class Code {
         for (char row[]:inMap) {
             tmpMap[n]=encodeRow(row);
             n++;
-            System.out.println(row); 
+         //   System.out.println(row); 
         }
         return tmpMap;
     }
@@ -203,8 +202,9 @@ public class Code {
 
         myCode.printMap(myCode.alphaMap);
 
-    //    myCode.encodedMap=myCode.encodeMap(myCode.byteMap);
+        myCode.encodedMap=myCode.encodeMap(myCode.byteMap);
 
+        myCode.printMap(myCode.encodedMap);
     }
 }
 
