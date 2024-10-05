@@ -128,27 +128,29 @@ public class Code {
             n++;
         }
     }
-/*
+
     char [] getCurrentAlphaRow()
     {  
-     //   char ch=cyclicKey.indexOf[cyclicKeyIndex];
-     //   int rowResult= Arrays.binarySearch(baseSet, ch);
+        char ch=cyclicKey.charAt(cyclicKeyIndex);
+        int rowIndex= Arrays.binarySearch(baseSet, ch);
 
-      //  alphaMap[rowResult
+        if (cyclicKeyIndex==cyclicKey.length()) {
+            cyclicKeyIndex=0;
+        }
+        else cyclicKeyIndex++;
 
-
-
-    }*/
+        return alphaMap[rowIndex];
+    }
 
     char encodeChar(char ch)
     {
+        int colIndex= Arrays.binarySearch(baseSet, ch);
 
-        char tmpRow[]=baseSet;
-        int colResult= Arrays.binarySearch(tmpRow, ch);
+        char alphaRow[]=getCurrentAlphaRow();
 
-        //ch= alphaMap[colResult,];
-        return ch;
+        char encodedChar= alphaRow[colIndex];
 
+        return encodedChar;
     }
 
     char [] encodeRow(char inRow[])
