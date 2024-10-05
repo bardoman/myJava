@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 import java.nio.charset.StandardCharsets;
+import java.lang.Math.*;
 
 public class Code {
     char byteMap[][];
@@ -82,10 +83,11 @@ public class Code {
         }
     }
 
-    void printMap(char[][] byteMap)
+    void printMap(char[][] byteMap,String mapName)
     {
-
         System.out.println("*****************start****************************");
+
+        System.out.println(mapName);
         for (char row[]:byteMap) {
             String str = new String(row);
             System.out.println(str); 
@@ -141,13 +143,13 @@ public class Code {
 
     char decodeChar(char ch)
     {
-        int colIndex= Arrays.binarySearch(baseSet, ch);
-
         char alphaRow[]=getCurrentAlphaRow();
 
-        char encodedChar= alphaRow[colIndex];
+        int colIndex= Arrays.binarySearch(alphaRow, ch);
 
-        return encodedChar;
+        char decodedChar= baseSet[Math.abs(colIndex)];//needs debug
+
+        return decodedChar;
     }
 
     char [] encodeRow(char inRow[])
@@ -214,15 +216,16 @@ public class Code {
             myCode.putCol(n,myCode.reverse(bytes));
             n++;    
         }
-        myCode.printMap(myCode.byteMap);
+        myCode.printMap(myCode.byteMap,"byteMap");
 
         myCode.setupAlphaMap();
-
-        myCode.printMap(myCode.alphaMap);
+        myCode.printMap(myCode.alphaMap,"alphaMap");
 
         myCode.encodedMap=myCode.encodeMap(myCode.byteMap);
+        myCode.printMap(myCode.encodedMap,"encodedMap");
 
-        myCode.printMap(myCode.encodedMap);
+    //    myCode.decodeMap=myCode.decodeMap(myCode.encodedMap);
+    //    myCode.printMap(myCode.decodeMap,"decodedMap");
     }
 }
 
