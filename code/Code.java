@@ -4,7 +4,8 @@ import java.nio.charset.StandardCharsets;
 import java.lang.Math.*;
 
 public class Code {
-    char byteMap[][];
+    char inputMap[][];
+    char transMap[][];
     char encodedMap[][];
     char decodeMap[][];
     int alphaSize =36;
@@ -83,12 +84,12 @@ public class Code {
         }
     }
 
-    void printMap(char[][] byteMap,String mapName)
+    void printMap(char[][] transMap,String mapName)
     {
         System.out.println("*****************start****************************");
 
         System.out.println(mapName);
-        for (char row[]:byteMap) {
+        for (char row[]:transMap) {
             String str = new String(row);
             System.out.println(str); 
         }
@@ -113,9 +114,10 @@ public class Code {
         int rowSize=row.length;
         int n=0;
         for (char item:row) {
-            byteMap[n][colNum]=item;
+            transMap[n][colNum]=item;
             n++;
         }
+        int c=0;
     }
 
     char [] getCurrentAlphaRow()
@@ -145,9 +147,12 @@ public class Code {
     {
         char alphaRow[]=getCurrentAlphaRow();
 
-        int colIndex= Arrays.binarySearch(alphaRow, ch);
+        String tmpStr=new String(alphaRow);
+        int colIndex=tmpStr.indexOf(ch);
 
-        char decodedChar= baseSet[Math.abs(colIndex)];//needs debug
+        // int colIndex= Arrays.binarySearch(alphaRow, ch);
+
+        char decodedChar= baseSet[colIndex];//needs debug
 
         return decodedChar;
     }
@@ -196,36 +201,64 @@ public class Code {
         return tmpMap;
     }
 
-    public static void main(String args[]) throws Exception  {
-        boolean firstPass=true;
-        Code myCode=new Code();
-        FileReader fileReader=new FileReader(args[0]);
+    char [][] readMapFromFile(String inFileName)throws Exception
+    {
+
+        FileReader fileReader=new FileReader(inFileName);
         BufferedReader buffReader = new BufferedReader(fileReader); 
 
         int n=0;
+        boolean firstPass=true;
+
         while (buffReader.ready()) {
             String str=buffReader.readLine();
-            System.out.println(str);
-            char[] bytes = new String(str.getBytes(StandardCharsets.UTF_8)).toCharArray();
-            System.out.println(bytes);
             if (firstPass) {
-                myCode.byteMap=new char[bytes.length][bytes.length];
+                inputMap=new char[str.length()][str.length()];
                 firstPass=false;
             }
+            inputMap[n]= new String(str.getBytes(StandardCharsets.UTF_8)).toCharArray();
+            if (n<str.length()-1) {
+                n++; 
+            } else break;
 
-            myCode.putCol(n,myCode.reverse(bytes));
-            n++;    
         }
-        myCode.printMap(myCode.byteMap,"byteMap");
+        return inputMap;
+    }
+    void translateMap(char inputMap[][])
+    {
+
+        int n=0;
+        boolean firstPass=true;
+        for (char ch[]:inputMap) {
+            if (firstPass) {
+                transMap=new char [ch.length][ch.length]; 
+                firstPass=false;
+            }
+            //  byte bytes[]=new char[bytes.length][bytes.length];
+            putCol(n,reverse(ch));
+            if (n<ch.length-1) {
+                n++; 
+            } else break;
+        }
+    }
+
+    public static void main(String args[]) throws Exception  {
+        Code myCode=new Code();
+        myCode.inputMap=myCode.readMapFromFile(args[0]);
+        myCode.printMap(myCode.inputMap,"inputMap");
+
+        myCode.translateMap(myCode.inputMap);
+
+        myCode.printMap(myCode.transMap,"transMap");
 
         myCode.setupAlphaMap();
         myCode.printMap(myCode.alphaMap,"alphaMap");
 
-        myCode.encodedMap=myCode.encodeMap(myCode.byteMap);
+        myCode.encodedMap=myCode.encodeMap(myCode.transMap);
         myCode.printMap(myCode.encodedMap,"encodedMap");
 
-    //    myCode.decodeMap=myCode.decodeMap(myCode.encodedMap);
-    //    myCode.printMap(myCode.decodeMap,"decodedMap");
+        myCode.decodeMap=myCode.decodeMap(myCode.encodedMap);
+        myCode.printMap(myCode.decodeMap,"decodedMap");
     }
 }
 
