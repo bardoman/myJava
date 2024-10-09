@@ -56,7 +56,6 @@ public class Code {
             int n=0;
             while (buffRd.ready()) {
                 String str=buffRd.readLine();
-                //    System.out.println(str);
                 alphaMap[n]  = new String(str.getBytes(StandardCharsets.UTF_8)).toCharArray();
                 n++;
             }
@@ -72,7 +71,6 @@ public class Code {
             char tmpBytes[]= new char[alphaSize];
 
             for (int c=0;c<alphaSize;c++) {
-                // tmpBytes=getRandCharArray();
                 tmpBytes=getShuffleCharArray();
                 alphaMap[c]= tmpBytes;
                 int n=0;
@@ -105,19 +103,7 @@ public class Code {
             outAray[n]=ch;
             n--;
         }
-
         return outAray;
-    }
-
-    void putCol(int colNum, char row[])
-    {
-        int rowSize=row.length;
-        int n=0;
-        for (char item:row) {
-            transMap[n][colNum]=item;
-            n++;
-        }
-        int c=0;
     }
 
     char [] getCurrentAlphaRow()
@@ -203,7 +189,6 @@ public class Code {
 
     char [][] readMapFromFile(String inFileName)throws Exception
     {
-
         FileReader fileReader=new FileReader(inFileName);
         BufferedReader buffReader = new BufferedReader(fileReader); 
 
@@ -224,22 +209,20 @@ public class Code {
         }
         return inputMap;
     }
-    void translateMap(char inputMap[][])
-    {
 
-        int n=0;
-        boolean firstPass=true;
-        for (char ch[]:inputMap) {
-            if (firstPass) {
-                transMap=new char [ch.length][ch.length]; 
-                firstPass=false;
+    char [][] translateMap(char inputMap[][])
+    {
+        int size = inputMap[0].length;
+        char tmpMap[][]=new char [size][size];
+        int tmpRowCnt=0;
+        int tmpColCnt=0;
+        char ch;
+        for (int inRowCnt=0;inRowCnt<size;inRowCnt++)
+            for (int inColCnt=0;inColCnt<size;inColCnt++) {
+                ch =inputMap[inRowCnt][inColCnt];
+                tmpMap[size-inColCnt-1][size-inRowCnt-1]=ch;
             }
-            //  byte bytes[]=new char[bytes.length][bytes.length];
-            putCol(n,reverse(ch));
-            if (n<ch.length-1) {
-                n++; 
-            } else break;
-        }
+               return tmpMap;
     }
 
     public static void main(String args[]) throws Exception  {
@@ -247,7 +230,7 @@ public class Code {
         myCode.inputMap=myCode.readMapFromFile(args[0]);
         myCode.printMap(myCode.inputMap,"inputMap");
 
-        myCode.translateMap(myCode.inputMap);
+        myCode.transMap=myCode.translateMap(myCode.inputMap);
 
         myCode.printMap(myCode.transMap,"transMap");
 
@@ -259,6 +242,9 @@ public class Code {
 
         myCode.decodeMap=myCode.decodeMap(myCode.encodedMap);
         myCode.printMap(myCode.decodeMap,"decodedMap");
+
+        myCode.inputMap = myCode.translateMap(myCode.decodeMap);
+        myCode.printMap(myCode.inputMap,"inputMap");
     }
 }
 
