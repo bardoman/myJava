@@ -16,19 +16,19 @@ public class Code {
     char[] baseSet = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     // Implementing Fisher–Yates shuffle
-    char [] getShuffleCharArray()
+    char [] getShuffleRow()
     {
-        char options[]=new char[alphaSize];
-        options = Arrays.copyOf(baseSet, alphaSize);
+        char tmpRow[]=new char[alphaSize];
+        tmpRow = Arrays.copyOf(baseSet, alphaSize);
         Random rnd = new Random();
         for (int i = alphaSize - 1; i > 0; i--) {
             int index = rnd.nextInt(i + 1);
             // Simple swap
-            char a = options[index];
-            options[index] = options[i];
-            options[i] = a;
+            char a = tmpRow[index];
+            tmpRow[index] = tmpRow[i];
+            tmpRow[i] = a;
         }
-        return options;
+        return tmpRow;
     }
 
     void saveAlphaMap()throws Exception{
@@ -49,7 +49,6 @@ public class Code {
     void readAlphaMap()throws Exception{
         File tempFile=new File(alphaMapFileName);
         if (tempFile.exists()) {
-
             FileReader fileRd=new FileReader(tempFile);
             BufferedReader buffRd = new BufferedReader(fileRd); 
 
@@ -67,12 +66,8 @@ public class Code {
     {
         File tempFile=new File(alphaMapFileName);
         if (!tempFile.exists()) {
-
-            char tmpBytes[]= new char[alphaSize];
-
             for (int c=0;c<alphaSize;c++) {
-                tmpBytes=getShuffleCharArray();
-                alphaMap[c]= tmpBytes;
+                alphaMap[c]=getShuffleRow();
                 int n=0;
             }
             saveAlphaMap();
@@ -82,28 +77,16 @@ public class Code {
         }
     }
 
-    void printMap(char[][] transMap,String mapName)
+    void printMap(char[][] inMap,String mapName)
     {
         System.out.println("*****************start****************************");
 
         System.out.println(mapName);
-        for (char row[]:transMap) {
+        for (char row[]:inMap) {
             String str = new String(row);
             System.out.println(str); 
         }
         System.out.println("******************end***************************");
-    }
-
-    char [] reverse(char inAray[])
-    {
-        char outAray[] = new char[inAray.length];
-
-        int n=inAray.length-1;
-        for (char ch:inAray) {
-            outAray[n]=ch;
-            n--;
-        }
-        return outAray;
     }
 
     char [] getCurrentAlphaRow()
@@ -138,7 +121,7 @@ public class Code {
 
         // int colIndex= Arrays.binarySearch(alphaRow, ch);
 
-        char decodedChar= baseSet[colIndex];//needs debug
+        char decodedChar= baseSet[colIndex];
 
         return decodedChar;
     }
@@ -189,6 +172,11 @@ public class Code {
 
     char [][] readMapFromFile(String inFileName)throws Exception
     {
+        File tstFile=new File(inFileName);
+        if (!tstFile.exists()) {
+            System.out.println("Input file does not exist");
+            System.exit(1);
+        }
         FileReader fileReader=new FileReader(inFileName);
         BufferedReader buffReader = new BufferedReader(fileReader); 
 
@@ -205,7 +193,6 @@ public class Code {
             if (n<str.length()-1) {
                 n++; 
             } else break;
-
         }
         return inputMap;
     }
@@ -222,7 +209,7 @@ public class Code {
                 ch =inputMap[inRowCnt][inColCnt];
                 tmpMap[size-inColCnt-1][size-inRowCnt-1]=ch;
             }
-               return tmpMap;
+        return tmpMap;
     }
 
     public static void main(String args[]) throws Exception  {
@@ -231,7 +218,6 @@ public class Code {
         myCode.printMap(myCode.inputMap,"inputMap");
 
         myCode.transMap=myCode.translateMap(myCode.inputMap);
-
         myCode.printMap(myCode.transMap,"transMap");
 
         myCode.setupAlphaMap();
