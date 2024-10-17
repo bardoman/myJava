@@ -3,12 +3,13 @@ import java.util.*;
 import java.nio.charset.StandardCharsets;
 import java.lang.Math.*;
 
-public class Code {
-    char inputMap[][];
-    char transMap[][];
-    char encodedMap[][];
-    char decodeMap[][];
+public class Code
+{
     int alphaSize =36;
+    char inputMap[][]=new char[alphaSize][alphaSize];;
+    char transMap[][]=new char[alphaSize][alphaSize];;
+    char encodedMap[][]=new char[alphaSize][alphaSize];;
+    char decodeMap[][]=new char[alphaSize][alphaSize];;  
     char alphaMap[][]=new char[alphaSize][alphaSize];
     String alphaMapFileName="AlphaMap.txt";
     int cyclicKeyIndex=0;
@@ -21,7 +22,8 @@ public class Code {
         char tmpRow[]=new char[alphaSize];
         tmpRow = Arrays.copyOf(baseSet, alphaSize);
         Random rnd = new Random();
-        for (int i = alphaSize - 1; i > 0; i--) {
+        for (int i = alphaSize - 1; i > 0; i--)
+        {
             int index = rnd.nextInt(i + 1);
             // Simple swap
             char a = tmpRow[index];
@@ -33,12 +35,14 @@ public class Code {
 
     void saveAlphaMap()throws Exception{
         File tempFile=new File(alphaMapFileName);
-        if (!tempFile.exists()) {
+        if (!tempFile.exists())
+        {
 
             FileWriter fileWr=new FileWriter(tempFile);
             BufferedWriter buffWr = new BufferedWriter(fileWr); 
 
-            for (char ch[]:alphaMap) {
+            for (char ch[]:alphaMap)
+            {
                 buffWr.write(ch);
                 buffWr.write(System.getProperty( "line.separator" ));
             }
@@ -48,12 +52,14 @@ public class Code {
 
     void readAlphaMap()throws Exception{
         File tempFile=new File(alphaMapFileName);
-        if (tempFile.exists()) {
+        if (tempFile.exists())
+        {
             FileReader fileRd=new FileReader(tempFile);
             BufferedReader buffRd = new BufferedReader(fileRd); 
 
             int n=0;
-            while (buffRd.ready()) {
+            while (buffRd.ready())
+            {
                 String str=buffRd.readLine();
                 alphaMap[n]  = new String(str.getBytes(StandardCharsets.UTF_8)).toCharArray();
                 n++;
@@ -65,14 +71,17 @@ public class Code {
     void setupAlphaMap()throws Exception
     {
         File tempFile=new File(alphaMapFileName);
-        if (!tempFile.exists()) {
-            for (int c=0;c<alphaSize;c++) {
+        if (!tempFile.exists())
+        {
+            for (int c=0;c<alphaSize;c++)
+            {
                 alphaMap[c]=getShuffleRow();
                 int n=0;
             }
             saveAlphaMap();
 
-        } else {
+        } else
+        {
             readAlphaMap();
         }
     }
@@ -82,7 +91,8 @@ public class Code {
         System.out.println("*****************start****************************");
 
         System.out.println(mapName);
-        for (char row[]:inMap) {
+        for (char row[]:inMap)
+        {
             String str = new String(row);
             System.out.println(str); 
         }
@@ -94,7 +104,8 @@ public class Code {
         char ch=cyclicKey.charAt(cyclicKeyIndex);
         int rowIndex= Arrays.binarySearch(baseSet, ch);
 
-        if (cyclicKeyIndex==cyclicKey.length()-1) {
+        if (cyclicKeyIndex==cyclicKey.length()-1)
+        {
             cyclicKeyIndex=0;
         } else cyclicKeyIndex++;
 
@@ -130,7 +141,8 @@ public class Code {
     {
         char tmpRow[]=new char[inRow.length];
         int n=0;
-        for (char ch:inRow) {
+        for (char ch:inRow)
+        {
             tmpRow[n]=encodeChar(ch);
             n++;
         }
@@ -141,7 +153,8 @@ public class Code {
     {
         char tmpRow[]=new char[inRow.length];
         int n=0;
-        for (char ch:inRow) {
+        for (char ch:inRow)
+        {
             tmpRow[n]=decodeChar(ch);
             n++;
         }
@@ -152,7 +165,8 @@ public class Code {
     {
         int n=0;
         char tmpMap[][]=new char[inMap.length][inMap.length];
-        for (char row[]:inMap) {
+        for (char row[]:inMap)
+        {
             tmpMap[n]=encodeRow(row);
             n++;
         }
@@ -163,17 +177,40 @@ public class Code {
     {
         int n=0;
         char tmpMap[][]=new char[inMap.length][inMap.length];
-        for (char row[]:inMap) {
+        for (char row[]:inMap)
+        {
             tmpMap[n]=decodeRow(row);
             n++;
         }
         return tmpMap;
     }
 
+    String washRow(String inRow)
+    {
+        String tmpStr="";
+        tmpStr= inRow.toUpperCase();
+        String tmpStr2="";
+
+        for (int i=0;i<tmpStr.length();i++)
+        {
+            char ch=tmpStr.charAt(i);
+            int rowIndex= Arrays.binarySearch(baseSet,ch );
+            if (rowIndex <0 )
+            {
+                continue;
+            } else
+            {
+                tmpStr2=tmpStr2+ch;
+            }
+        }
+        return tmpStr2;
+    }
+
     char [][] readMapFromFile(String inFileName)throws Exception
     {
         File tstFile=new File(inFileName);
-        if (!tstFile.exists()) {
+        if (!tstFile.exists())
+        {
             System.out.println("Input file does not exist");
             System.exit(1);
         }
@@ -182,30 +219,49 @@ public class Code {
 
         int n=0;
         boolean firstPass=true;
+        String tmpStr="";
 
-        while (buffReader.ready()) {
+        while (buffReader.ready())
+        {
             String str=buffReader.readLine();
-            if (firstPass) {
-                inputMap=new char[str.length()][str.length()];
-                firstPass=false;
-            }
-            inputMap[n]= new String(str.getBytes(StandardCharsets.UTF_8)).toCharArray();
-            if (n<str.length()-1) {
+            if (!str.isEmpty())
+            {
+                str=washRow(str);
+                tmpStr+=str;
+            } else continue;
+
+//            inputMap[n]= new String(str.getBytes(StandardCharsets.UTF_8)).toCharArray();
+            if (n<str.length()-1)
+            {
                 n++; 
             } else break;
         }
+
+        int strSize=tmpStr.length();
+
+        int i=0;
+        for (int col=0;col<alphaSize;col++)
+            for (int row=0;row<alphaSize;row++)
+            {
+                inputMap[col][row]=tmpStr.charAt(i);
+
+                if (i==strSize-1)i=0;
+                else i++;             
+            }
+
         return inputMap;
     }
 
     char [][] translateMap(char inputMap[][])
     {
-        int size = inputMap[0].length;
-        char tmpMap[][]=new char [size][size];
+        int size = alphaSize;
+        char tmpMap[][]=new char [alphaSize][alphaSize];
         int tmpRowCnt=0;
         int tmpColCnt=0;
         char ch;
         for (int inRowCnt=0;inRowCnt<size;inRowCnt++)
-            for (int inColCnt=0;inColCnt<size;inColCnt++) {
+            for (int inColCnt=0;inColCnt<size;inColCnt++)
+            {
                 ch =inputMap[inRowCnt][inColCnt];
                 tmpMap[size-inColCnt-1][size-inRowCnt-1]=ch;
             }
@@ -223,7 +279,7 @@ public class Code {
         myCode.setupAlphaMap();
         myCode.printMap(myCode.alphaMap,"alphaMap");
 
-        myCode.encodedMap=myCode.encodeMap(myCode.transMap);
+         myCode.encodedMap=myCode.encodeMap(myCode.transMap);
         myCode.printMap(myCode.encodedMap,"encodedMap");
 
         myCode.decodeMap=myCode.decodeMap(myCode.encodedMap);
