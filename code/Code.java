@@ -13,7 +13,9 @@ public class Code
     char alphaMap[][]=new char[alphaSize][alphaSize];
     String alphaMapFileName="AlphaMap.txt";
     int cyclicKeyIndex=0;
-    String cyclicKey="SIMPLEKEY";
+    //String cyclicKey="SIMPLEKEYZXCVBNM";
+    String cyclicKey="BECOMEWHATYOUARE";
+
     char[] baseSet = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     // Implementing Fisher–Yates shuffle
@@ -129,8 +131,6 @@ public class Code
 
         String tmpStr=new String(alphaRow);
         int colIndex=tmpStr.indexOf(ch);
-
-        // int colIndex= Arrays.binarySearch(alphaRow, ch);
 
         char decodedChar= baseSet[colIndex];
 
@@ -279,7 +279,7 @@ public class Code
         myCode.setupAlphaMap();
         myCode.printMap(myCode.alphaMap,"alphaMap");
 
-         myCode.encodedMap=myCode.encodeMap(myCode.transMap);
+        myCode.encodedMap=myCode.encodeMap(myCode.transMap);
         myCode.printMap(myCode.encodedMap,"encodedMap");
 
         myCode.decodeMap=myCode.decodeMap(myCode.encodedMap);
