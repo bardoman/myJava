@@ -1,0 +1,2 @@
+db2 "UPDATE VERSIONS SET verDate=changeDate WHERE verDate is null"
+

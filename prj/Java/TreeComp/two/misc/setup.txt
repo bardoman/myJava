@@ -1,0 +1,55 @@
+Setup & Customization:
+
+The client needs setup information that defines how to communicate with the MVS and library servers.
+In addition, it needs information that enables it to run jobs on MVS. Each of the build pages use 
+the setup information specified when the page is opened. If you open a new driver build and change
+the setup information, your changes will not take effect until you close the driver build and open
+a new one.
+
+The first time you run the client, run it in GUI mode. A setup dialog where you can provide
+the following information appears:
+	Build/390 Server includes the following:
+		Hostname - the IP address of the system running the Build390 server (snjeds3.sanjose.ibm.com)
+		Port number - the port that the server is running on. There may be multiple servers running
+			your system at different levels supporting different level clients, so ask your
+			administrator for the port number that supports your client level.
+		TSO user ID - The ID that jobs will run under. You are prompted for the password for the
+			ID specified here whenever you run the client.
+		TSO account information -  You can get this information from your TSO logon screen. 
+			Check with your Build390 administrator for the correct format to use. 
+			On SNJEDS3 in SanJose, enclose the data in parenthesis and delimit it with
+			commas (e.g., bob,x12,050,w97).
+	Family includes the following:
+		family name - such as 'fam1'
+		family address - such as 'fam1.sanjose.ibm.com'
+		family port - such as '1220'
+		user name - the user name that the library knows you as
+                Config RMI port - the port number of the Build/390 config rmi port
+		library installation path - The path to your CMVC or T/C executables
+		library type - CMVC or T/C
+	BPS Server includes the following:
+		Hostname - The IP address of the system running the BPS server, such as bps17.raleigh.ibm.com
+		BPS Port - The port that the BPS server is running on
+		Release in Service - Any CMVC release name that is defined in PDT as being in service mode
+		Service RMI port - The port that the Build/390 RMI server is running on, on the CMVC server.
+	Help Viewer
+		Defines how Help buttons are processed. Specify the path to your copy of Netscape 4.0.4
+		or newer.
+	Editor
+		Defines how the client displays a file's contents. Make no selection to use the built-in
+		Java viewer, or select Use Custom Editor and specify the full path to your favorite
+		editor (recommended).
+	Build/390 Update Server
+		Provides a Web-based method for updating the Build/390 client. If your administrator
+		has set up your site's server correctly, you can get updates based on your site/workgroup
+		definition. To see the list of currently supported sites/workgroups, click the List
+		supported sites/workgroups button. Ask your administrator which workgroup to select.
+		To update your client once setup has been completed and saved, select Help|Get Local Updates
+		from the client menu.
+
+The information entered in the dialog is saved and used for communication with the MVS server and the
+library server. These values can be overridden temporarily as described in the Command Line section.
+To change the setup information again, start the GUI and select the 'Options' menu item and then select
+the 'Setup' sub menu item. Whenever you change the setup information, test your connection to the MVS
+and Library servers by selecting the Test Connection menu items on the setup dialog. To do the same
+from the command line enter 'java Build390.MBClient nutsy.

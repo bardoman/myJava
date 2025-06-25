@@ -1,0 +1,20 @@
+package test;
+import java.net.*;
+import java.io.*;
+
+public class Untitled1 {
+Socket soc;
+  public Untitled1() {
+  try
+  {
+  soc=new Socket("kentm.boulder.ibm.com",6996);
+}
+catch(IOException ioe)
+{
+}
+  System.out.println("soc="+soc);
+  }
+  public static void main(String[] args) {
+    Untitled1 untitled11 = new Untitled1();
+  }
+}

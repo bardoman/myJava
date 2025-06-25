@@ -1,0 +1,4 @@
+@echo OFF
+REM Use this batch file to start the Build/390 Configuration Admin tool on Windows
+
+.\jre\bin\java -classpath .\jre\lib\rt.jar;.;.\Build390.jar; Build390.configAdmin.configAdminTool  %*

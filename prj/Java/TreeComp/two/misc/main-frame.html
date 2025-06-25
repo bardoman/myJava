@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+    <TITLE>Build390 Help</TITLE>
+</HEAD>
+<SCRIPT>
+var urlMonitor;
+
+function startMonitor() {
+    urlMonitor = new Packages.helpURLGetter();
+    setInterval('jsGetURL()', 1000);
+}
+
+function jsGetURL(){
+    var newURL = urlMonitor.getURL();
+    if (newURL != "nothinghere") {
+        focus();
+        main.location.replace(newURL);
+    }
+}
+function killMonitor() {
+    urlMonitor.close();
+}
+</SCRIPT>
+    <FRAMESET ROWS="*,90%" onUnload='killMonitor()' onLoad='startMonitor()'>
+        <FRAME SRC="navigation.html" NAME="navigation">
+        <FRAME SRC="B390ClientUsersGuide40.html" NAME="main">
+    </FRAMESET>
+ </HTML>

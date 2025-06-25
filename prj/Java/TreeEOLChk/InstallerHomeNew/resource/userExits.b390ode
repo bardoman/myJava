@@ -1,0 +1,18 @@
+# Build/390 ODE Service User Exits
+# --------------------------------------------------------------------
+# Instruction:
+# Rename this file to the userExits in the $CMVC_HOME/config directory
+# Install this Build/390 user exits first then install BPS user exits
+# ====================================================================
+# verify Apar delta driver
+# upload and define the ++HOLD, Apar closing text, and Apar definition
+TrackIntegrate  2  B390_trackIntegrate2.perl cmdsetup.txt
+TrackIntegrate  1  B390_TrackIntegrate1.perl 
+# send a SHIPPTF to the PTF control and the COPYSENT to Retain via BPS
+TestAccept      1  B390_TestAccept1.perl
+TestAbstain     1  B390_TestAbstain1.perl
+TestReject      2  B390_TestReject2.perl
+ConflictAccept 1 B390_ConflictAccept1.perl
+# ====================================================================
+
+

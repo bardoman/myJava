@@ -1,0 +1,43 @@
+# Build/390 Service User Exits
+# 05/05/99,  Version 2.2.0
+# 06/28/99,  Added TestAccept and TestAbstain to call Level Commit
+# 04/25/00,  pjs - prefix exit names with B390_
+# --------------------------------------------------------------------
+# Instruction:
+# Rename this file to the userExits in the $CMVC_HOME/config directory
+# Install this Build/390 user exits first then install BPS user exits
+# ====================================================================
+
+# verify Apar delta driver
+TrackReview     1  B390_trackReview1.perl cmdsetup.txt
+
+# upload and define the ++HOLD, Apar closing text, and Apar definition
+TrackIntegrate  2  B390_trackIntegrate2.perl cmdsetup.txt
+TrackIntegrate  1  B390_TrackIntegrate1.perl 
+
+# send a SHIPPTF to the PTF control and the COPYSENT to Retain via BPS
+TestAccept      1  B390_TestAccept1.perl
+TestAbstain     1  B390_TestAbstain1.perl
+TestReject      2  B390_TestReject2.perl
+
+#produces message of disabled state of conflict accept option
+ConflictAccept 1 B390_ConflictAccept1.perl
+
+#creates parameter file and unlocks driver
+TrackFix 2 B390_TrackFix2.perl
+
+#stores metadata in hash
+FixComplete 1 B390_FixComplete1.perl
+
+#sets metadata for track in table
+FixComplete 2 B390_FixComplete2.perl
+
+#checks if track create allowed
+TrackCreate 1 B390_TrackCreate1.perl
+
+#checks component of file equal to component of defect
+FileCheckIn 0 B390_FileCheckin0.perl
+
+# ====================================================================
+
+

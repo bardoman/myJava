@@ -1,0 +1,45 @@
+[Global]
+CurrentProject=test.vpj
+[ProjectDates]
+test.vpj=20080104230742455
+[ActiveConfig]
+test.vpj=Debug
+[State]
+SCREEN: 1400 1050 208 208 1050 721 0 0 M 0 0 0 0 1195 689 0
+CWD: ..\TripleDES
+BUFFER: BN="DESInFile"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=8 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1
+VIEW: LN=.0 CL=1 LE=0 CX=0 CY=0 WI=5 BI=19 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="DESOutFile"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=8 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=0 CY=0 WI=5 BI=21 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="TripleDES.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=135801 TL=0 MLL=0 ASE=0 LNL=6 LCF=2 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.5568 CL=84 LE=0 CX=83 CY=44 WI=5 BI=20 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 782 1243 62 -1 -1 N  WF=0 WT=1 "Lucida Console,10,1,1"
+BUFFER: BN="DESOutFile"
+VIEW: LN=.0 CL=1 LE=0 CX=0 CY=0 WI=225 BI=21 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 844 1243 65 -1 -1 N  WF=0 WT=1 "Lucida Console,10,1,1"
+BUFFER: BN="DESInFile"
+VIEW: LN=.0 CL=1 LE=0 CX=0 CY=0 WI=226 BI=19 HT=0 HN=0 HF=0 HC=4
+WINDOW: -137 2 1243 782 -1 -1 M  WF=0 WT=2 "Lucida Console,10,1,1"
+BUFFER: BN="TripleDES.java"
+VIEW: LN=.1217 CL=19 LE=0 CX=26 CY=23 WI=222 BI=20 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+..\..\..\F\Clients\Ver6.0\P6011_111507\com\ibm\sdwb\build390\process\MVSDRVRBLDVerbCaller.java
+..\..\..\F\Clients\Ver6.0\P6011_111507\drvrbld\D8AC00A6\Build.log
+..\..\..\F\Clients\Ver6.0\P6011_111507\drvrbld\D8AC00A6\phaseresults3.prt
+..\..\..\F\Clients\Ver6.0\P6011_111507\com\ibm\sdwb\build390\mainframe\parser\DriverReportParser.java
+DES3.key
+\UTIL\JDK5IBM\bin\javac.exe
+DESOutFile
+DESInFile
+TripleDES.java
+DEBUG: 0 1 0 0 5 0
+.
+java.*
+javax.*
+com.sun.*
+com.ibm.*
+sun.*
+TBCLASS: 0 0

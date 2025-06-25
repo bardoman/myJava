@@ -1,0 +1,17 @@
+* Add internet format addresses for msg recipients
+* start comment lines with an '*'
+*
+* The next line identifies the mail server to be used when sending mail
+mailserver:na.relay.ibm.com
+*
+* This line identifies the server to send registration and error information to
+* DO Not remove the next line
+databaseserver:rtpgsa.ibm.com
+*
+* This line identifies where to send mail if the dbserver is down
+email:beifler@us.ibm.com
+*
+* The next lines identify who to send test info to. only used when /test option is used
+*test:kishore1@us.ibm.com
+*test:psfcons@sjfevmx.sanjose.ibm.com
+*test:annmyra@us.ibm.com

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<index version="1.0">
+    <indexitem text="/debug" target="chapter6_optional_parameters" />
+    <indexitem text="/hold" target="chapter6_optional_parameters" />
+    <indexitem text="/printhelp" target="chapter6_getting_help" />
+    <indexitem text="/remote" target="chapter6_optional_parameters" />
+    <indexitem text="B" />
+    <indexitem text="Build390" target="chapter1_introduction" />
+    <indexitem text="BPXPRM00" target="chapter2_bpxprm00_settings" />
+    <indexitem text="C" />
+   <!-- <indexitem text="Clear" target="chapter2_migrating_from_clear" /> -->
+    <indexitem text="Configuration data(Client)" target="chapter7_viewing_config" />
+    <indexitem text="Command line" target="chapter6_b390_uss_command_line_client" />
+    <indexitem text="Concurrent development" target="chapter2_concurrent_dev_support" />
+    <indexitem text="D" />
+    <indexitem text="Debug" target="chapter5_debug" />
+    <indexitem text="Download" target="what_has_changed" />
+    <indexitem text="Driver" target="chapter7_creating_driver_NewDriverTypeDialog" />
+    <indexitem text="G" />
+    <indexitem text="GUI" target="chapter5_using_b390_client_gui" />
+    <indexitem text="H" />
+    <indexitem text="Hardware requirements " target="chapter2_minimum_hardware_req" />
+    <indexitem text="I" />
+    <indexitem text="Installation" target="what_has_changed" />
+    <indexitem text="L" />
+    <indexitem text="Local site specific help" target="local_site_specific_help" />
+    <indexitem text="M" />
+    <indexitem text="Metadata Validataion" target="chapter7_reports_metadata_validation" />
+   <!-- <indexitem text="Migration" target="chapter2_migration_considerations" /> -->
+    <indexitem text="O" />
+    <indexitem text="ODE" target="chapter6_ode_commands" />
+    <indexitem text="P" />
+    <indexitem text="Parmfile" target="chapter6_parmfile" />
+    <indexitem text="Part Metadata Definitions(Process Reference)" target="process_reference_link_metadata" />
+    <indexitem text="Passticket" target="chapter2_passticket_support" />
+    <indexitem text="Platforms" target="chapter2_b390_client_gui" />
+    <indexitem text="R" />
+    <indexitem text="RC=?" target="chapter6_return_codes" />
+    <indexitem text="Return Codes(Build390 Client only)" target="chapter6_return_codes" />
+    <indexitem text="Release" target="chapter7_creating_a_release_NewShadowDialog" />
+    <indexitem text="Requirements (see also SDWB) " target="what_has_changed" />
+    <indexitem text="S" />
+    <indexitem text="SDWB1278" target="what_has_changed_SDWB1278" />
+    <indexitem text="SDWB1457" target="what_has_changed_SDWB1457" />
+    <indexitem text="SDWB1489" target="what_has_changed_SDWB1489" />
+    <indexitem text="SDWB1777" target="what_has_changed_SDWB1777" />
+    <indexitem text="SDWB1964" target="what_has_changed_SDWB1964" />
+    <indexitem text="SDWB1980" target="what_has_changed_SDWB1980" />
+    <indexitem text="SDWB2019" target="what_has_changed_SDWB2019" />
+    <indexitem text="SDWB2058" target="what_has_changed_SDWB2058" />
+    <indexitem text="SDWB2088" target="what_has_changed_SDWB2088" />
+    <indexitem text="INT1095" target="what_has_changed_INT1095" />
+    <indexitem text="PTM2686" target="what_has_changed_PTM2686" />
+    <indexitem text="PTM2711" target="what_has_changed_PTM2711" />
+    <indexitem text="Service process" target="chapter2_service_process_considerations" />
+    <indexitem text="Setup" target="chapter4_setup_SetupDialog" />
+   <!-- <indexitem text="SPA" target="chapter2_migrating_from_spa" /> -->
+    <indexitem text="T" />
+    <indexitem text="Table of Contents" target="tableofcontents" />
+    <indexitem text="U" />
+    <indexitem text="USS" target="chapter2_uss_command_line_client" />
+    <indexitem text="W" />
+    <indexitem text="what has changed in this release " target="what_has_changed" />
+</index>
+

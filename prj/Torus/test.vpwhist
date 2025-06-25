@@ -1,0 +1,59 @@
+[Global]
+CurrentProject=test.vpj
+[ProjectDates]
+test.vpj=20140421201405252
+[ActiveConfig]
+test.vpj=Debug
+[State]
+SCREEN: 1920 1080 90 90 1590 712 0 0 M 0 0 0 0 1608 589 0
+CWD: ..\Torus3
+BUFFER: BN="msg.txt"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.554 CL=35 LE=0 CX=35 CY=15 WI=5 BI=20 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="out.txt"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=5 LE=0 CX=5 CY=10 WI=5 BI=21 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="Torus.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=4656 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.8571 CL=1 LE=0 CX=1 CY=17 WI=5 BI=18 HT=0 HN=0 HF=0 HC=4
+WINDOW: 192 60 1240 536 -1 -1 N  WF=0 WT=4 "Default Fixed Font,10,0,1"
+BUFFER: BN="msg.txt"
+VIEW: LN=.554 CL=35 LE=0 CX=35 CY=15 WI=135 BI=20 HT=0 HN=0 HF=0 HC=4
+WINDOW: 216 90 1240 536 -1 -1 N  WF=0 WT=3 "Default Fixed Font,10,0,1"
+BUFFER: BN="out.txt"
+VIEW: LN=.0 CL=5 LE=0 CX=5 CY=0 WI=136 BI=21 HT=0 HN=0 HF=0 HC=4
+WINDOW: 144 0 1240 413 -1 -1 M  WF=0 WT=2 "Default Fixed Font,10,0,1"
+BUFFER: BN="Torus.java"
+VIEW: LN=.8571 CL=1 LE=0 CX=1 CY=17 WI=137 BI=18 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+..\..\..\F\Clients\Ver6.1\DEV\R6.1.2\030910\com\ibm\sdwb\build390\utilities\xml\MetaDataFile.java
+..\..\..\F\Clients\Ver6.1\DEV\R6.1.2\030910\com\ibm\sdwb\build390\utilities\xml\MetaSet.java
+..\..\..\F\Clients\Ver6.1\DEV\R6.1.2\030910\com\ibm\sdwb\build390\utilities\xml\MetaDataParseUtility.java
+..\..\..\F\Clients\Ver6.1\DEV\R6.1.2\030910\XML\MDE\SETMETADATAIN.xml
+..\..\..\F\Clients\Ver6.1\DEV\R6.1.2\030910\com\ibm\sdwb\build390\userinterface\text\commandline\process\SetMetadata.java
+msg.txt
+out.txt
+\UTIL\IBM_JAVA\IBM6SDK\src.zip\java\lang\System.java
+Torus.java
+DEBUG: 0 1 10 0 5 0
+.
+00TorusTorusTorus.java11110
+00TorusTorusTorus.java11810
+00TorusTorusTorus.java12610
+00TorusTorusTorus.java12810
+00TorusaddMessagesTorus.java22110
+00TorusaddMessagesTorus.java22310
+00TorusaddMessagesTorus.java23010
+00TorusaddMessagesTorus.java23210
+00TorusisFreeTorus.java28410
+00TorusfindFreeTorus.java25810
+java.*
+javax.*
+com.sun.*
+com.ibm.*
+sun.*
+TBCLASS: 0 0
+[TreeExpansion2]
+- test.vpj
+  - (default package)
+scroll:0

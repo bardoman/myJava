@@ -1,0 +1,12 @@
+Main: The parameters passed =>
+getPlatform: Entry
+getPlatform: RC of uname command = 0
+getPlatform: Exit
+Main: The script is running in platform => AIX
+DisplayMenuForAix: Entry
+DisplayMenuForAix: Help
+DisplayMenuForAix: Exit
+ExitInstaller:Entry
+DeleteBackupOfBuild390Directory: Entry
+DeleteBackupOfBuild390Directory: Exit
+ExitInstaller: After DeleteBackupBuild390Directory

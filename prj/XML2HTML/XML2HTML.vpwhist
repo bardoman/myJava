@@ -1,0 +1,54 @@
+[Global]
+CurrentProject=XML2HTML.vpj
+[ProjectDates]
+XML2HTML.vpj=20170117180245344
+[ActiveConfig]
+XML2HTML.vpj=Debug
+[TreeExpansion2]
++ XML2HTML.vpj
+scroll:0
+[State]
+SCREEN: 1920 1080 899 48 985 933 0 0 M 0 0 0 0 1659 510 0
+CWD: ..\XML2HTML
+BUFFER: BN="test.html"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1
+VIEW: LN=.14369 CL=1 LE=0 CX=1 CY=23 WI=5 BI=22 HT=4064 HN=0 HF=0 HC=4
+BUFFER: BN="bookmarks.xml"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=XML	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=70 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=21 HT=4064 HN=0 HF=0 HC=4
+BUFFER: BN="bookmarks.html"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=25 HT=4064 HN=0 HF=0 HC=4
+BUFFER: BN="XML2HTML.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=4720 TL=0 MLL=0 ASE=0 LNL=6 LCF=2 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.972 CL=77 LE=0 CX=77 CY=16 WI=5 BI=5 HT=4064 HN=0 HF=0 HC=4
+WINDOW: 24 30 1166 333 -1 -1 N  WF=0 WT=3 "Default Unicode Font,10,0,1"
+BUFFER: BN="bookmarks.xml"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=13 BI=21 HT=0 HN=0 HF=0 HC=4
+WINDOW: 48 60 1166 333 -1 -1 N  WF=0 WT=4 "Default Fixed Font,10,0,1"
+BUFFER: BN="bookmarks.html"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=12 BI=25 HT=0 HN=0 HF=0 HC=4
+WINDOW: 72 90 1285 420 -1 -1 N  WF=0 WT=5 "Default Fixed Font,10,0,1"
+BUFFER: BN="test.html"
+VIEW: LN=.14369 CL=1 LE=0 CX=1 CY=23 WI=152 BI=22 HT=0 HN=0 HF=0 HC=4
+WINDOW: 96 120 1285 440 -1 -1 M  WF=0 WT=2 "Default Fixed Font,10,0,1"
+BUFFER: BN="XML2HTML.java"
+VIEW: LN=.972 CL=52 LE=0 CX=59 CY=16 WI=153 BI=5 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+..\..\..\F\PROBS\DamenTuillo\111716\C1CBBE11\Build.log
+\zBuildWork2.2\misc\NUTSY-MVSServerStatus-nasw.pok.ibm.com-8300.prt
+..\..\..\E\util\bookmarks\bookmarks.html
+..\..\..\E\util\bookmarks\bookmarks.xml
+..\..\PersonalBusiness\FinanceDoc.txt
+bookmarks.xml
+bookmarks.html
+XML2HTML.java
+test.html
+DEBUG: 0 1 0 0 5 0
+.
+java.*
+javax.*
+com.sun.*
+com.ibm.*
+sun.*
+TBCLASS: 0 0

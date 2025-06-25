@@ -1,0 +1,35 @@
+[Global]
+CurrentProject=SystemProperties.vpj
+[ProjectDates]
+SystemProperties.vpj=20110317163354453
+[ActiveConfig]
+SystemProperties.vpj=Debug
+[TreeExpansion2]
++ SystemProperties.vpj
+scroll:0
+[State]
+SCREEN: 1920 1200 203 0 1578 1136 0 0 M 0 0 0 0 1583 745 0
+CWD: ..\SystemProperties
+BUFFER: BN="SystemProperties.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=135800 TL=0 MLL=0 ASE=0 LNL=6 LCF=2 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.103 CL=32 LE=0 CX=32 CY=4 WI=5 BI=22 HT=0 HN=0 HF=0 HC=4
+WINDOW: 176 99 1226 375 -1 -1 N  WF=0 WT=2 "Courier,12,1,1"
+BUFFER: BN="SystemProperties.java"
+VIEW: LN=.103 CL=32 LE=0 CX=39 CY=4 WI=165 BI=22 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+\UTIL\eclipseWork\com.ibm.sdwb.zbuild.api.test\misc\build390.log
+..\..\..\F\Clients\zBuild_1.0.0.0\022811\DEV\com\ibm\sdwb\build390\server\GeneralServer.java
+..\..\..\F\Clients\zBuild_1.0.0.0\022811\DEV\com\ibm\sdwb\build390\process\APARDevelopmentComplete.java
+..\..\..\F\Clients\zBuild_1.0.0.0\022811\DEV\com\ibm\sdwb\build390\process\AparInspectionPackage.java
+..\..\..\F\Clients\zBuild_1.0.0.0\022811\DEV\com\ibm\sdwb\build390\service\ServiceInfo.java
+..\..\..\F\Clients\zBuild_1.0.0.0\022811\DEV\com\ibm\sdwb\build390\userinterface\graphic\panels\build\AparPanel.java
+..\..\..\F\Clients\zBuild_1.0.0.0\022811\DEV\com\ibm\sdwb\build390\process\steps\LibraryPartlistGeneration.java
+..\..\..\F\Clients\zBuild_1.0.0.0\022811\DEV\com\ibm\sdwb\build390\workflowautomationtoolbridge\xmlhandler\ParameterAPARDevelopmentCompleteElementHandler.java
+SystemProperties.java
+DEBUG: 0 0 0 0 5 0
+java.*
+javax.*
+com.sun.*
+com.ibm.*
+sun.*
+TBCLASS: 0 0

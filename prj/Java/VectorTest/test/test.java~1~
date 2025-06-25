@@ -1,0 +1,20 @@
+package test;
+
+
+
+public class test {
+Vector v=new Vector();
+String s[]={"abc","bca","cba"};
+  public test() {
+  for(int i=0;i!=s.length;i++)
+  {
+    v.put(s[i]);
+  }
+
+  if(v.contains("bca"))System.out.println("Yup");
+
+  }
+  public static void main(String[] args) {
+    test test1 = new test();
+  }
+}

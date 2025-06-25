@@ -1,0 +1,16 @@
+
+
+
+
+
+
+String os = System.getProperty("os.name");
+
+        if(os.startsWith("Windows"))
+        {
+            helpSetFileName = "file:/" + B390_HELPSET_FILE;
+        }
+        else
+        {
+            helpSetFileName = "file://" + B390_HELPSET_FILE;
+        }

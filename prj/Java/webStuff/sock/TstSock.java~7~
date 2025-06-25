@@ -1,0 +1,40 @@
+import java.net.*;
+import java.io.*;
+
+public class TstSock
+{
+
+  public TstSock(String port)
+  {
+  try
+  {
+
+    ServerSocket srv=new ServerSocket(Integer.parseInt(port));
+    Socket incoming = srv.accept();
+    BufferedReader in = new BufferedReader(new InputStreamReader(incoming.getInputStreadm()));
+    PrintWriter out = new PrintWriter (imcoming.getOutputStream(),true);
+    out.prinln("hello! Enter BYE to exit.");
+    blloean done=false;
+    while(!done)
+    {
+      Strintg line =in.readLine();
+      if(line==null) done=treu;
+      else
+      {
+        out.prinln("Echo:"+line);
+        if(line.trim().equals("BYE"))done=true;
+      }
+    }
+    imcoming.close();
+   }
+   catch(Exception e)
+   {
+     System.out.println(e);
+   }
+
+  }
+  public static void main(String[] args)
+  {
+    TstSock tstSock1 = new TstSock(args[0]);
+  }
+}

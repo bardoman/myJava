@@ -1,0 +1,191 @@
+#
+# @(#)src/classes/pfm/sun/awt/motif/font.properties.ko, fontprop, aa142, 20070612 1.34.2.1
+# ===========================================================================
+# Licensed Materials - Property of IBM
+# "Restricted Materials of IBM"
+#
+# IBM SDK, Java(tm) 2 Technology Edition, v1.4.2
+# (C) Copyright IBM Corp. 2001, 2003. All Rights Reserved
+# ===========================================================================
+#
+
+# Intended for Korean on AIX
+# Note: modification of this file is risky and not supported
+#    see http://java.sun.com/products/jdk/1.2/docs/guide/internat/fontprop.html
+#
+
+#
+# Serif font
+#
+serif.0=-jdk-lucidabright-medium-r-normal--*-%d-75-75-p-*-iso8859-1
+serif.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+serif.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+exclusion.serif.1=0000-10FF,1200-ABFF,D800-FFFF
+fontcharset.serif.0=sun.io.CharToByteISO8859_1
+fontcharset.serif.1=sun.io.CharToByteCp971
+fontcharset.serif.2=sun.awt.CharToByteSymbol
+
+serif.italic.0=-jdk-lucidabright-medium-i-normal--*-%d-75-75-p-*-iso8859-1
+serif.italic.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+serif.italic.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+exclusion.serif.italic.1=0000-10FF,1200-ABFF,D800-FFFF
+fontcharset.serif.italic.0=sun.io.CharToByteISO8859_1
+fontcharset.serif.italic.1=sun.io.CharToByteCp971
+fontcharset.serif.italic.2=sun.awt.CharToByteSymbol
+
+serif.bold.0=-jdk-lucidabright-bold-r-normal--*-%d-75-75-p-*-iso8859-1
+serif.bold.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+serif.bold.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+exclusion.serif.bold.1=0000-10FF,1200-ABFF,D800-FFFF
+fontcharset.serif.bold.0=sun.io.CharToByteISO8859_1
+fontcharset.serif.bold.1=sun.io.CharToByteCp971
+fontcharset.serif.bold.2=sun.awt.CharToByteSymbol
+
+serif.bolditalic.0=-jdk-lucidabright-bold-i-normal--*-%d-75-75-p-*-iso8859-1
+serif.bolditalic.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+serif.bolditalic.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+exclusion.serif.bold.1=0000-10FF,1200-ABFF,D800-FFFF
+fontcharset.serif.bolditalic.0=sun.io.CharToByteISO8859_1
+fontcharset.serif.bolditalic.1=sun.io.CharToByteCp971
+fontcharset.serif.bolditalic.2=sun.awt.CharToByteSymbol
+
+#
+# Sansserif font
+#
+sansserif.0=-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-1
+sansserif.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontcharset.sansserif.0=sun.io.CharToByteISO8859_1
+fontcharset.sansserif.1=sun.io.CharToByteCp971
+
+sansserif.italic.0=-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-1
+sansserif.italic.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontcharset.sansserif.italic.0=sun.io.CharToByteISO8859_1
+fontcharset.sansserif.italic.1=sun.io.CharToByteCp971
+
+sansserif.bold.0=-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-1
+sansserif.bold.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontcharset.sansserif.bold.0=sun.io.CharToByteISO8859_1
+fontcharset.sansserif.bold.1=sun.io.CharToByteCp971
+
+sansserif.bolditalic.0=-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-1
+sansserif.bolditalic.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontcharset.sansserif.bolditalic.0=sun.io.CharToByteISO8859_1
+fontcharset.sansserif.bolditalic.1=sun.io.CharToByteCp971
+
+#
+# Monospaced font
+#
+monospaced.0=-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-1
+monospaced.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontcharset.monospaced.0=sun.io.CharToByteISO8859_1
+fontcharset.monospaced.1=sun.io.CharToByteCp971
+
+monospaced.italic.0=-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-1
+monospaced.italic.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontcharset.monospaced.italic.0=sun.io.CharToByteISO8859_1
+fontcharset.monospaced.italic.1=sun.io.CharToByteCp971
+
+monospaced.bold.0=-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-1
+monospaced.bold.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontcharset.monospaced.bold.0=sun.io.CharToByteISO8859_1
+fontcharset.monospaced.bold.1=sun.io.CharToByteCp971
+
+monospaced.bolditalic.0=-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-1
+monospaced.bolditalic.1=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontcharset.monospaced.bolditalic.0=sun.io.CharToByteISO8859_1
+fontcharset.monospaced.bolditalic.1=sun.io.CharToByteCp971
+
+#
+# Dialog font
+#
+alias.dialog=sansserif
+alias.dialoginput=monospaced
+
+#
+# To enable helvetica, courier and timesroman as real fonts
+# remove aliases, and define them as real terminal fonts.
+# (i.e. timesroman.0=TimesRoman)
+#
+# timesroman.0=TimesRoman
+alias.timesroman=serif
+# helvetica.0=Helvetica
+alias.helvetica=sansserif
+# courier.0=Courier
+alias.courier=monospaced
+
+# font filenames
+
+filename.lucida_bold_i=LucidaSansDemiOblique.ttf
+filename.lucida_bold_r=LucidaSansDemiBold.ttf
+filename.lucida_medium_i=LucidaSansOblique.ttf
+filename.lucida_medium_r=LucidaSansRegular.ttf
+filename.lucidabright_bold_i=LucidaBrightDemiItalic.ttf
+filename.lucidabright_bold_r=LucidaBrightDemiBold.ttf
+filename.lucidabright_medium_i=LucidaBrightItalic.ttf
+filename.lucidabright_medium_r=LucidaBrightRegular.ttf
+filename.lucidatypewriter_bold_i=LucidaTypewriterBoldOblique.ttf
+filename.lucidatypewriter_bold_r=LucidaTypewriterBold.ttf
+filename.lucidatypewriter_medium_i=LucidaTypewriterOblique.ttf
+filename.lucidatypewriter_medium_r=LucidaTypewriterRegular.ttf
+filename.sansmonowt_medium_r=mtsansdk.ttf
+filename.timesnewromanmt30_medium_r=tnrmt30.ttf
+filename.timesnewromanwt_medium_r=tnrwt_k.ttf
+
+# default char definition
+default.char=02ff
+
+#  X11 Specific font set (necessary for TextArea and TextField)
+
+fontset.serif.plain=\
+-jdk-lucidabright-medium-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.serif.italic=\
+-jdk-lucidabright-medium-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.serif.bold=\
+-jdk-lucidabright-bold-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.serif.bolditalic=\
+-jdk-lucidabright-bold-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+
+fontset.sansserif.plain=\
+-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.sansserif.italic=\
+-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.sansserif.bold=\
+-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.sansserif.bolditalic=\
+-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+
+fontset.monospaced.plain=\
+-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-1,\
+-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.monospaced.italic=\
+-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-1,\
+-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.monospaced.bold=\
+-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-1,\
+-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+fontset.monospaced.bolditalic=\
+-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-1,\
+-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-*-*-ksc5601.1987-0
+
+
+# ibm text performance feature
+ibm.java2d.useawtfonts=0
+
+# font substitution
+substitute.0=Times New Roman WT=Monotype Sans Duospace WT K
+substitute.1=Monotype Sans Duospace WT=Times New Roman WT K
+substitute.2=-TimesNewRomanWT=SansMonoWT
+substitute.3=-SansMonoWT=TimesNewRomanWT
+substitute.4=Times New Roman WT=Gulim
+substitute.5=Monotype Sans Duospace WT=Gulim
+substitute.6=-TimesNewRomanWT=gulim
+substitute.7=-SansMonoWT=gulim
+

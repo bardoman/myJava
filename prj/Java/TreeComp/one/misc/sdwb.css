@@ -1,0 +1,49 @@
+/* Integrated Solutions Console (ISC) Version 1.0 */
+/* INFO.CSS - English          */
+/* -------------------------------- */
+/* (C) COPYRIGHT International Business Machines Corp. 2002    */
+/* All Rights Reserved                                               */
+/* Licensed Materials - Property of IBM                              */
+/* US Government Users Restricted Rights - Use, duplication or       */
+/* disclosure restricted by GSA ADP Schedule Contract with IBM Corp. */
+/* -------------------------------- */
+
+body         {font-family: Arial, Helvetica, sans-serif}                   
+h1, h2, h3, h4, ,h5, h6, p, table, td, caption, th, ul, ol, dl, li, dd, dt {font-family: Arial, Helvetica, sans-serif}
+pre, code	 { font-family: Courier, monospace}
+
+
+ol.figlist { font-size: 10pt; font-weight:normal }
+a.figurelist { font-size: 10pt; font-weight:normal; padding-top:0.5em; text-indent: -1em }
+
+ol.tablelist { font-size: 10pt; font-weight:normal; padding-top:0.5em }
+a.tablelist { font-size: 10pt; font-weight:normal; padding-top:0.5em; text-indent: -1em }
+
+body	       { font-size: 11pt; background-color: #FFFFFF}
+h1           { font-size: 18pt; margin-top: 5px; margin-bottom: 1px }	
+h2           { font-size: 16pt; margin-top: 15px; margin-bottom: 3px }
+h3           { font-size: 14pt; margin-top: 10px; margin-bottom: 3px; font-style: italic }
+h4           { font-size: 12pt; margin-top: 10px; margin-bottom: 3px }
+p            { font-size: 11pt; margin-top: 10px; margin-bottom: 10px }
+a:link	 { color: #0000FF }
+a:hover	 { color: #0000FF }
+a:visited    { color: #0000FF; text-decoration: underline }
+ul	       { font-size: 11pt; list-style-type: disc; margin-top: 0; margin-bottom: 6px }
+li	       { font-size: 11pt; margin-top: 0; margin-bottom: 0 } 
+ol	       { font-size: 11pt; list-style-type: decimal; margin-top: 0; margin-bottom: 6px }
+ol ol	       { font-size: 11pt; list-style-type: lower-alpha; margin-top: 0; margin-bottom: 6px }
+ol ol ol     { font-size: 11pt; list-style-type: decimal; margin-top: 0; margin-bottom: 6px }
+dl	       { padding: 0; font-size: 11pt; margin-top: 6px; margin-bottom: 6px }
+dt	       { padding: 0; font-size: 11pt; margin-top: 0; margin-bottom: 6px; font-weight: bold }
+dd	       { padding: 0; font-size: 11pt; margin-left: 15px; margin-top: 0; margin-bottom: 6px }
+table        { font-size: 11pt; float: none }
+th	       { font-size: 11pt; font-weight: bold; background-color: #C0C8D4  }
+td           { font-size: 11pt} 
+table.ex     { background-color: #CCCCCC }
+strong	 { font-weight: bold}
+em, cite     { font-style: italic}
+var	       { font-style: italic}
+div.revision { border-left-style: solid; border-left-width: thin; 
+				   border-left-color: #7B68EE; padding-left:5px }
+
+

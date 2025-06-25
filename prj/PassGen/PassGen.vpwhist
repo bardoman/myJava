@@ -1,0 +1,38 @@
+[Global]
+CurrentProject=PassGen.vpj
+[ProjectDates]
+PassGen.vpj=20170125220205738
+[ActiveConfig]
+PassGen.vpj=Debug
+[TreeExpansion2]
+- PassGen.vpj
+  - (default package)
+scroll:0
+[State]
+SCREEN: 1920 1080 899 48 985 933 0 0 M 0 0 0 0 1659 686 0
+CWD: ..\PassGen
+BUFFER: BN="PasswordGenerator.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=4720 TL=0 MLL=0 ASE=0 LNL=6 LCF=2 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.1296 CL=58 LE=0 CX=58 CY=4 WI=5 BI=20 HT=4064 HN=0 HF=0 HC=4
+WINDOW: 24 30 1285 357 -1 -1 M  WF=0 WT=2 "Default Fixed Font,10,0,1"
+BUFFER: BN="PasswordGenerator.java"
+VIEW: LN=.1296 CL=58 LE=0 CX=65 CY=4 WI=145 BI=20 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+\UTIL\IBM_JAVA\java8sdk\sdk\src.zip\java\util\stream\IntStream.java
+PasswordGenerator.java
+..\..\..\F\PROBS\GregMcBride\U56917CC\BuildContents.prt
+..\..\..\F\PROBS\GregMcBride\U56917CC\Build.log
+..\..\..\F\PROBS\GregMcBride\U56917CC\phaseresults1.prt
+..\..\..\F\PROBS\GregMcBride\U56917CC\JOBOUTPUTJCSMFCMJOB06666.out
+..\..\..\F\PROBS\JoeGregor\013017\D572766A\Build.log
+..\..\..\F\PROBS\JoeGregor\013017\D572766A\phaseresults26.prt
+..\..\PersonalBusiness\FinanceDoc.txt
+DEBUG: 0 0 2 0 5 0
+00PasswordGeneratormainPasswordGenerator.java4610
+00PasswordGeneratormainPasswordGenerator.java4410
+java.*
+javax.*
+com.sun.*
+com.ibm.*
+sun.*
+TBCLASS: 0 0

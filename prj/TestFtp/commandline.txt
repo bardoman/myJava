@@ -1,0 +1,6 @@
+
+
+buildog=> TestFtp.ksh beifler im2b4ram 200 0 1000 xfrtest2 snjeds3
+
+Win2k=> TestFtp beifler im2b4ram 1000 0 1000 xfrtest snjeds3
+

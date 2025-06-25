@@ -1,0 +1,15 @@
+package test;
+import java.net.*;
+
+
+public class Untitled1 {
+
+  public Untitled1() {
+  Socket soc=new Socket(kentm.boulder.ibm.com,6996);
+
+  System.out.println("soc=",soc);
+  }
+  public static void main(String[] args) {
+    Untitled1 untitled11 = new Untitled1();
+  }
+}

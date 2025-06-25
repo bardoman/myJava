@@ -1,0 +1,1 @@
+java -classpath STLTool.jar: PortTestServer $1 

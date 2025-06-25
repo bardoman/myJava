@@ -1,0 +1,81 @@
+[CONFIGURATIONS]
+config=classes,COMPILER.Debug
+config=classes,COMPILER.Release
+[GLOBAL]
+FILTERNAME=Source Files\nBitmaps\nOther Files\n
+FILTERPATTERN=*.java;*.c;*.cpp;*.cxx;*.hxx;*.prg;*.pas;*.dpr;*.asm;*.bas;*.sc;*.e\n*.jpg;*.gif;*.bmp\n*.*\n
+FILTERAPPCOMMAND=\n\n\n
+FILTERASSOCIATEFILETYPES=0 1 0
+macro_switchconfig=_on_switchconfig_java
+app_type_list=application,applet,custom
+packtype=java
+DebugCallbackName=jdwp
+workingdir=.
+version=7.0
+packname=Java - With main()
+MACRO=\n
+[COMPILER.Debug]
+app_type=application
+packver=5
+compile=copts: concur|capture|dialog:_java_options_form:Compiler|readonly|savecurrent|menu: Compile:&Compilecmd: javac %jbd %cp "%f"otheropts: 
+make=copts: concur|capture|dialog:_java_options_form:Compiler|readonly|saveworkspacefiles|menu: Build:&Buildcmd: javamakeotheropts: rebuild: 1
+rebuild=copts: concur|capture|dialog:_java_options_form:Compiler|readonly|saveworkspacefiles|menu: Rebuild:&Rebuildcmd: javarebuildotheropts: 
+debug=copts: concur|capture|dialog:_java_options_form:Debugger|readonly|buildfirst|menu: Debug:&Debugcmd: java -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 %cp TestConnect snjeds3.sanjose.ibm.com 969 10otheropts: 
+apptool_debug_applet=copts: |dialog:_java_options_form:Appletviewer|readonly|buildfirst|menu: Debug:&Debugcmd: appletviewer -debug %hotheropts: 
+apptool_debug_custom=copts: |buildfirst|menu: Debug:&Debugcmd: jdb %cp TestConnectotheropts: 
+apptool_debug_application=copts: concur|capture|dialog:_java_options_form:Debugger|readonly|buildfirst|menu: Debug:&Debugcmd: java -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 %cp TestConnect snjeds3.sanjose.ibm.com 969 10otheropts: 
+execute=copts: concur|capture|dialog:_java_options_form:Interpreter|readonly|buildfirst|saveworkspacefiles|menu: Execute:E&xecutecmd: java %cp TestConnect snjeds3.sanjose.ibm.com 969 10otheropts: 
+apptool_execute_applet=copts: concur|capture|dialog:_java_options_form:Appletviewer|readonly|buildfirst|saveworkspacefiles|menu: Execute:E&xecutecmd: appletviewer %hotheropts: appletclass: TestConnect
+apptool_execute_custom=copts: concur|capture|buildfirst|saveworkspacefiles|menu: Execute:E&xecutecmd: java %cp TestConnectotheropts: 
+apptool_execute_application=copts: concur|capture|dialog:_java_options_form:Interpreter|readonly|buildfirst|saveworkspacefiles|menu: Execute:E&xecutecmd: java %cp TestConnect snjeds3.sanjose.ibm.com 969 10otheropts: 
+usertool_dash=copts: |savenone|menu: dash:-cmd: otheropts: 
+usertool_view_javadoc=copts: |dialog:_java_options_form:javadoc|readonly|disablecapoutput|savecurrent|hide|menu: view javadoc:&View Javadoccmd: javaviewdocotheropts: 
+usertool_javadoc_all=copts: concur|capture|dialog:_java_options_form:javadoc|readonly|saveworkspacefiles|hide|menu: javadoc all:Javadoc Allcmd: javamakedoc javadoc -d docs %cp %{*.java}otheropts: 
+usertool_dash2=copts: |savenone|menu: dash2:-cmd: otheropts: 
+usertool_make_jar=copts: concur|capture|dialog:_java_options_form:jar|readonly|saveworkspacefiles|hide|menu: make jar:Make &Jarcmd: javamakejar jar cvf TestConnect.jar  %{*.*} -C classes\ TestConnect$Task.class -C classes\ TestConnect.class %~otherotheropts:  rebuild: 1
+usertool_java_options=copts: |readonly|disablecapoutput|savenone|hide|nochangedir|menu: java options:Java &Options...cmd: javaoptionsotheropts: 
+user1=copts: |hide|menu: User 1:User 1cmd: otheropts: 
+user2=copts: |hide|menu: User 2:User 2cmd: otheropts: 
+includedirs=
+sysincludedirs=
+reffile=
+libs=
+outputfile=
+prebuildcmds=
+postbuildcmds=
+stoponprebuilderrors=0
+stoponpostbuilderrors=0
+[COMPILER.Release]
+app_type=application
+packver=5
+compile=copts: concur|capture|dialog:_java_options_form:Compiler|readonly|savecurrent|menu: Compile:&Compilecmd: javac %jbd %cp "%f"otheropts: 
+make=copts: concur|capture|dialog:_java_options_form:Compiler|readonly|saveworkspacefiles|menu: Build:&Buildcmd: javamakeotheropts: rebuild: 1
+rebuild=copts: concur|capture|dialog:_java_options_form:Compiler|readonly|saveworkspacefiles|menu: Rebuild:&Rebuildcmd: javarebuildotheropts: 
+debug=copts: concur|capture|dialog:_java_options_form:Debugger|readonly|buildfirst|menu: Debug:&Debugcmd: java -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 %cp TestConnect snjeds3.sanjose.ibm.com 969 10otheropts: 
+apptool_debug_applet=copts: |dialog:_java_options_form:Appletviewer|readonly|buildfirst|menu: Debug:&Debugcmd: appletviewer -debug %hotheropts: 
+apptool_debug_custom=copts: |buildfirst|menu: Debug:&Debugcmd: jdb %cp TestConnectotheropts: 
+apptool_debug_application=copts: concur|capture|dialog:_java_options_form:Debugger|readonly|buildfirst|menu: Debug:&Debugcmd: java -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 %cp TestConnect snjeds3.sanjose.ibm.com 969 10otheropts: 
+execute=copts: concur|capture|dialog:_java_options_form:Interpreter|readonly|buildfirst|saveworkspacefiles|menu: Execute:E&xecutecmd: java %cp TestConnect snjeds3.sanjose.ibm.com 969 10otheropts: 
+apptool_execute_applet=copts: concur|capture|dialog:_java_options_form:Appletviewer|readonly|buildfirst|saveworkspacefiles|menu: Execute:E&xecutecmd: appletviewer %hotheropts: appletclass: TestConnect
+apptool_execute_custom=copts: concur|capture|buildfirst|saveworkspacefiles|menu: Execute:E&xecutecmd: java %cp TestConnectotheropts: 
+apptool_execute_application=copts: concur|capture|dialog:_java_options_form:Interpreter|readonly|buildfirst|saveworkspacefiles|menu: Execute:E&xecutecmd: java %cp TestConnect snjeds3.sanjose.ibm.com 969 10otheropts: 
+usertool_dash=copts: |savenone|menu: dash:-cmd: otheropts: 
+usertool_view_javadoc=copts: |dialog:_java_options_form:javadoc|readonly|disablecapoutput|savecurrent|hide|menu: view javadoc:&View Javadoccmd: javaviewdocotheropts: 
+usertool_javadoc_all=copts: concur|capture|dialog:_java_options_form:javadoc|readonly|saveworkspacefiles|hide|menu: javadoc all:Javadoc Allcmd: javamakedoc javadoc -d docs %cp %{*.java}otheropts: 
+usertool_dash2=copts: |savenone|menu: dash2:-cmd: otheropts: 
+usertool_make_jar=copts: concur|capture|dialog:_java_options_form:jar|readonly|saveworkspacefiles|hide|menu: make jar:Make &Jarcmd: javamakejar jar cvf TestConnect.jar  %{*.*} -C classes\ TestConnect$Task.class -C classes\ TestConnect.class %~otherotheropts:  rebuild: 1
+usertool_java_options=copts: |readonly|disablecapoutput|savenone|hide|nochangedir|menu: java options:Java &Options...cmd: javaoptionsotheropts: 
+user1=copts: |hide|menu: User 1:User 1cmd: otheropts: 
+user2=copts: |hide|menu: User 2:User 2cmd: otheropts: 
+includedirs=
+sysincludedirs=
+reffile=
+libs=
+outputfile=
+prebuildcmds=
+postbuildcmds=
+stoponprebuilderrors=0
+stoponpostbuilderrors=0
+[FILES]
+TestConnect.java
+[ASSOCIATION]

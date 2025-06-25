@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+  <meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+
+
+  
+  
+  <title>com.ibm.sdwb.build390.library</title>
+</head>
+
+
+<body bgcolor="white">
+
+
+base package for interfacing with a library system. <br>
+All library related classes used in general throughout the product should come from<br>
+this package or the userinterface subpackage to this package. &nbsp;The actual library <br>
+specific packages which will implement library calls should go in subpackages to this<br>
+package. &nbsp;Here is a guide to how to decide what to put in this package and what to put<br>
+in library specific packages:<br>
+When writing library related code, no package outside of com.ibm.sdwb.build390.library.cmvc<br>
+should EVER have any library specific code in it.&nbsp; Everything outside of that package should use<br>
+generic library classes that come from com.ibm.sdwb.build390.library or <br>
+com.ibm.sdwb.build390.library.userinterface.&nbsp; There is one and only one exception.&nbsp; In the Setup<br>
+GUI, there is a Library -&gt; Add menu.&nbsp; A single line can be added to the class for this that instantiates<br>
+a CMVC or Clearcase Library info object depending on what the user selects.&nbsp; That one line of code,<br>
+creating a new library specific object, should be the only library specific code outside of the CMVC <br>
+(or whatever) package.&nbsp; This means that when implementing support for a new library, you just have<br>
+to build the library specific package.&nbsp; WIth the addition of the single line to the setup dialog, you will<br>
+be ready to go. Also, this will insure that when fixing a bug, if it's library specfic it will get fixed in the<br>
+library specific package and so will have no way to screw the other library.&nbsp; In otherwords, fixing a<br>
+clearcase bug you CANNOT break CMVC.&nbsp; Also, if the bug is not library specific the code should<br>
+not be in the library specific section.&nbsp; So when you fix it for clearcase you WILL fix it for CMVC.&nbsp; As<br>
+this shows, we have a simple guideline we need to use when deciding what to implement at the library<br>
+specific level and what at the generic library level.&nbsp; The answer is everything that can be done at library<br>
+generic, should be.&nbsp; Nothing that's library specific should be though.<br>
+An example: <br>
+I'm working on requisite checking code that forms the scary backbone of
+the usermod and PTF processes.&nbsp; I am going to write library
+specific code that will get the base requisites in their simplest
+forms, convert them to a common data class, and pass the processing
+back to the generic code to actually process the requisites and find
+the necessary groupings for processing.<br>
+
+
+</body>
+</html>

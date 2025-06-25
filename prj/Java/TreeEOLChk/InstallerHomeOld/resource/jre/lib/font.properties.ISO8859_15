@@ -1,0 +1,209 @@
+#
+# @(#)src/classes/pfm/sun/awt/motif/font.properties.ISO8859_15, fontprop, aa142, 20070612 1.29.2.1
+# ===========================================================================
+# Licensed Materials - Property of IBM
+# "Restricted Materials of IBM"
+#
+# IBM SDK, Java(tm) 2 Technology Edition, v1.4.2
+# (C) Copyright IBM Corp. 2002, 2003. All Rights Reserved
+# ===========================================================================
+#
+
+# font.properties.ISO8859_15
+#
+# Intended for AIX and ISO8859_15 encoding
+#
+# Note: modification of this file is risky and not supported
+#    see http://java.sun.com/products/jdk/1.2/docs/guide/internat/fontprop.html
+#
+serif.0=-jdk-lucidabright-medium-r-normal--*-%d-75-75-p-*-iso8859-1
+serif.1=-jdk-lucidabright-medium-r-normal--*-%d-75-75-p-*-iso8859-15
+serif.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+serif.italic.0=-jdk-lucidabright-medium-i-normal--*-%d-75-75-p-*-iso8859-1
+serif.italic.1=-jdk-lucidabright-medium-i-normal--*-%d-75-75-p-*-iso8859-15
+serif.italic.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+serif.bold.0=-jdk-lucidabright-bold-r-normal--*-%d-75-75-p-*-iso8859-1
+serif.bold.1=-jdk-lucidabright-bold-r-normal--*-%d-75-75-p-*-iso8859-15
+serif.bold.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+serif.bolditalic.0=-jdk-lucidabright-bold-i-normal--*-%d-75-75-p-*-iso8859-1
+serif.bolditalic.1=-jdk-lucidabright-bold-i-normal--*-%d-75-75-p-*-iso8859-15
+serif.bolditalic.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+sansserif.0=-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-1
+sansserif.1=-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-15
+sansserif.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+sansserif.italic.0=-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-1
+sansserif.italic.1=-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-15
+sansserif.italic.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+sansserif.bold.0=-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-1
+sansserif.bold.1=-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-15
+sansserif.bold.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+sansserif.bolditalic.0=-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-1
+sansserif.bolditalic.1=-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-15
+sansserif.bolditalic.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+monospaced.0=-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-1
+monospaced.1=-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-15
+monospaced.2=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-m-*-ms-symbol
+
+monospaced.italic.0=-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-1
+monospaced.italic.1=-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-15
+monospaced.italic.2=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-m-*-ms-symbol
+
+monospaced.bold.0=-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-1
+monospaced.bold.1=-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-15
+monospaced.bold.2=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-m-*-ms-symbol
+
+monospaced.bolditalic.0=-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-1
+monospaced.bolditalic.1=-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-15
+monospaced.bolditalic.2=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-m-*-ms-symbol
+
+dialog.0=-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-1
+dialog.1=-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-15
+dialog.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+dialog.3=-Monotype-SansExtB-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+dialog.italic.0=-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-1
+dialog.italic.1=-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-15
+dialog.italic.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+dialog.bold.0=-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-1
+dialog.bold.1=-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-15
+dialog.bold.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+dialog.bolditalic.0=-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-1
+dialog.bolditalic.1=-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-15
+dialog.bolditalic.2=-Monotype-TimesNewRomanWT-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+
+dialoginput.0=-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-1
+dialoginput.1=-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-15
+dialoginput.2=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-m-*-ms-symbol
+
+dialoginput.italic.0=-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-1
+dialoginput.italic.1=-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-15
+dialoginput.italic.2=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-m-*-ms-symbol
+
+dialoginput.bold.0=-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-1
+dialoginput.bold.1=-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-15
+dialoginput.bold.2=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-m-*-ms-symbol
+
+dialoginput.bolditalic.0=-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-1
+dialoginput.bolditalic.1=-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-15
+dialoginput.bolditalic.2=-Monotype-SansMonoWT-medium-r-normal--*-%d-75-75-m-*-ms-symbol
+
+
+#
+# To enable helvetica, courier and timesroman as real fonts
+# remove aliases, and define them as real terminal fonts.
+# (i.e. timesroman.0=TimesRoman)
+#
+# timesroman.0=TimesRoman
+alias.timesroman=serif
+# helvetica.0=Helvetica
+alias.helvetica=sansserif
+# courier.0=Courier
+alias.courier=monospaced
+
+# font filenames
+
+filename.lucida_bold_i=LucidaSansDemiOblique.ttf
+filename.lucida_bold_r=LucidaSansDemiBold.ttf
+filename.lucida_medium_i=LucidaSansOblique.ttf
+filename.lucida_medium_r=LucidaSansRegular.ttf
+filename.lucidabright_bold_i=LucidaBrightDemiItalic.ttf
+filename.lucidabright_bold_r=LucidaBrightDemiBold.ttf
+filename.lucidabright_medium_i=LucidaBrightItalic.ttf
+filename.lucidabright_medium_r=LucidaBrightRegular.ttf
+filename.lucidatypewriter_bold_i=LucidaTypewriterBoldOblique.ttf
+filename.lucidatypewriter_bold_r=LucidaTypewriterBold.ttf
+filename.lucidatypewriter_medium_i=LucidaTypewriterOblique.ttf
+filename.lucidatypewriter_medium_r=LucidaTypewriterRegular.ttf
+filename.sansextb_medium_r=mtsanxba.ttf
+filename.sansmonowt_medium_r=mtsansdj.ttf
+filename.timesnewromanwt_medium_r=tnrwt_j.ttf
+
+# default char definition
+default.char=02ff
+
+# exclusion info
+
+#  X11 Specific font set (necessary for TextArea and TextField)
+
+fontset.serif.plain=\
+-jdk-lucidabright-medium-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucidabright-medium-r-normal--*-%d-75-75-p-*-iso8859-15
+fontset.serif.italic=\
+-jdk-lucidabright-medium-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucidabright-medium-i-normal--*-%d-75-75-p-*-iso8859-15
+fontset.serif.bold=\
+-jdk-lucidabright-bold-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucidabright-bold-r-normal--*-%d-75-75-p-*-iso8859-15
+fontset.serif.bolditalic=\
+-jdk-lucidabright-bold-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucidabright-bold-i-normal--*-%d-75-75-p-*-iso8859-15
+
+fontset.sansserif.plain=\
+-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-15
+fontset.sansserif.italic=\
+-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-15
+fontset.sansserif.bold=\
+-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-15
+fontset.sansserif.bolditalic=\
+-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-15
+
+fontset.monospaced.plain=\
+-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-1,\
+-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-15
+fontset.monospaced.italic=\
+-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-1,\
+-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-15
+fontset.monospaced.bold=\
+-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-1,\
+-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-15
+fontset.monospaced.bolditalic=\
+-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-1,\
+-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-15
+
+fontset.dialog.plain=\
+-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucida-medium-r-normal--*-%d-75-75-p-*-iso8859-15
+fontset.dialog.italic=\
+-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucida-medium-i-normal--*-%d-75-75-p-*-iso8859-15
+fontset.dialog.bold=\
+-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucida-bold-r-normal--*-%d-75-75-p-*-iso8859-15
+fontset.dialog.bolditalic=\
+-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-1,\
+-jdk-lucida-bold-i-normal--*-%d-75-75-p-*-iso8859-15
+
+fontset.dialoginput.plain=\
+-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-1,\
+-jdk-lucidatypewriter-medium-r-normal--*-%d-75-75-m-*-iso8859-15
+fontset.dialoginput.italic=\
+-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-1,\
+-jdk-lucidatypewriter-medium-i-normal--*-%d-75-75-m-*-iso8859-15
+fontset.dialoginput.bold=\
+-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-1,\
+-jdk-lucidatypewriter-bold-r-normal--*-%d-75-75-m-*-iso8859-15
+fontset.dialoginput.bolditalic=\
+-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-1,\
+-jdk-lucidatypewriter-bold-i-normal--*-%d-75-75-m-*-iso8859-15
+
+# font substitution
+substitute.0=Monotype Sans Duospace WT=Times New Roman WT J
+substitute.1=Times New Roman WT=Monotype SansDuospace WT J
+substitute.2=-SansMonoWT=TimesNewRomanWT
+substitute.3=-TimesNewRomanWT=SansMonoWT
+register.0=-Monotype-SansExtB-medium-r-normal--*-%d-75-75-p-*-ms-symbol
+

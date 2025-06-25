@@ -1,0 +1,41 @@
+
+import java.net.*;
+import java.io.*;
+
+public class HttpGet
+{
+
+	public static void main(String[] args)
+	throws Exception
+	{
+		if(args.length==0)
+		{
+			System.out.println("HttpGet performs a \"GET\" operation on a URL");
+			System.out.println("Usage: HttpGet <URL> <FileName>");
+			return;
+		}
+
+		URL url=new URL(args[0]);
+
+		HttpURLConnection hCon=(HttpURLConnection)url.openConnection();
+
+		hCon.setRequestMethod("GET");
+
+		InputStream is = hCon.getInputStream();
+
+		FileOutputStream fos = new FileOutputStream(new File(args[1]));
+
+		byte[] buffer = new byte[100 * 1024];
+
+		int length;
+
+		while((length = is.read(buffer)) >= 0)
+		{
+			fos.write(buffer, 0, length);
+		}
+
+		fos.close();
+
+		is.close();
+	}
+}

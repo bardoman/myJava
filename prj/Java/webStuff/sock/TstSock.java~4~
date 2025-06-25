@@ -1,0 +1,21 @@
+import java.net.*;
+
+
+public class TstSock
+{
+
+  public TstSock(String port)
+  {
+  try
+  {
+  System.out.println("port="+port);
+  ServerSocket srv=new ServerSocket(Integer.parseInt(port));
+   }
+   catch(Exception e){}
+
+  }
+  public static void main(String[] args)
+  {
+    TstSock tstSock1 = new TstSock(args[0]);
+  }
+}

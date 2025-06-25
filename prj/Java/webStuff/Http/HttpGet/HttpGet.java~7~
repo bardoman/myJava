@@ -1,0 +1,37 @@
+
+import java.net.*;
+import java.io.*;
+
+public class HttpGet
+{
+
+	public static void main(String[] args)
+        throws Exception
+	{
+
+		if(args.length==0)
+		{
+			System.out.println("HttpGet performs a \"GET\" operation on a URL");
+			System.out.println("Usage: HttpGet <URL> <FileName>");
+			return;
+		}
+		byte bAry[]=new byte[0x100000];
+
+		URL url=new URL("http://ssdwrk01.sanjose.ibm.com/build390/documents.htm");
+
+		HttpURLConnection hCon=(HttpURLConnection)url.openConnection();
+
+		hCon.setRequestMethod("GET");
+
+ 		DataInputStream iStrm=new DataInputStream(hCon.getInputStream());
+
+        FileOutputStream oStrm=new FileOutputStream(new File("test.html"));
+
+		int result=0;
+
+		while((result=iStrm.read(bAry))!=-1)
+		{
+			oStrm.write(bAry);
+		}
+	}
+}

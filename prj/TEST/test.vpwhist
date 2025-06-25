@@ -1,0 +1,113 @@
+[Global]
+CurrentProject=test.vpj
+[ProjectDates]
+test.vpj=20130926150151910
+[ActiveConfig]
+test.vpj=Debug
+[TreeExpansion2]
++ test.vpj
+scroll:0
+[State]
+SCREEN: 1920 1080 309 5 1152 602 0 0 M 0 0 0 0 1717 429 0
+CWD: ..\TEST
+BUFFER: BN="..\..\..\LotusDrafts\Drafts"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=31 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\..\E\SITE\FAXX.html"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=HTML	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=30001 ESBU2=-1
+VIEW: LN=.3611 CL=20 LE=0 CX=20 CY=3 WI=5 BI=28 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\buildAgent\bfagent.conf"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Config	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.799 CL=1 LE=0 CX=1 CY=13 WI=5 BI=27 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\Proto\buildDir\build.xml"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=XML	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=70 ESBU2=-1
+VIEW: LN=.926 CL=63 LE=0 CX=63 CY=8 WI=5 BI=23 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\buildAgent\startbfa.sh"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Bourne Shell	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.982 CL=1 LE=0 CX=1 CY=9 WI=5 BI=29 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\env.txt"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=25 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\jazz\buildsystem\buildagent\startbfa.sh.bak"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.1154 CL=45 LE=0 CX=45 CY=17 WI=5 BI=36 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\jazz\buildsystem\readme.txt"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.5552 CL=1 LE=0 CX=1 CY=12 WI=5 BI=37 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\go.ksh"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1
+VIEW: LN=.2 CL=124 LE=0 CX=124 CY=1 WI=5 BI=5 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\ls.txt"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.1555 CL=67 LE=0 CX=67 CY=16 WI=5 BI=21 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\.profile"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.936 CL=25 LE=0 CX=25 CY=12 WI=5 BI=20 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\NewBuildHome\zBuild.xml"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=XML	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=70 ESBU2=-1
+VIEW: LN=.1744 CL=52 LE=0 CX=52 CY=14 WI=5 BI=24 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\NewBuildHome\g.ksh"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Fundamental	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=1
+VIEW: LN=.2 CL=168 LE=61 CX=107 CY=1 WI=5 BI=33 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\CORE\ver8\v1ch05\ReflectionTest\ReflectionTest.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=608 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=32 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 873 161 -1 -1 N  WF=0 WT=2 "Default Fixed Font,10,0,1"
+BUFFER: BN="..\..\..\LotusDrafts\Drafts"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=135 BI=31 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 873 161 -1 -1 N  WF=0 WT=3 "Default Unicode Font,10,0,1"
+BUFFER: BN="..\..\..\E\SITE\FAXX.html"
+VIEW: LN=.3611 CL=20 LE=0 CX=20 CY=3 WI=126 BI=28 HT=0 HN=0 HF=0 HC=4
+WINDOW: 120 150 1482 387 -1 -1 N  WF=0 WT=6 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\buildAgent\bfagent.conf"
+VIEW: LN=.799 CL=1 LE=0 CX=1 CY=13 WI=136 BI=27 HT=0 HN=0 HF=0 HC=4
+WINDOW: 96 120 1482 426 -1 -1 N  WF=0 WT=10 "Default Unicode Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\Proto\buildDir\build.xml"
+VIEW: LN=.926 CL=63 LE=0 CX=63 CY=8 WI=97 BI=23 HT=0 HN=0 HF=0 HC=4
+WINDOW: 72 90 1482 481 -1 -1 N  WF=0 WT=5 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\buildAgent\startbfa.sh"
+VIEW: LN=.982 CL=1 LE=0 CX=1 CY=9 WI=79 BI=29 HT=0 HN=0 HF=0 HC=4
+WINDOW: 216 60 1482 426 -1 -1 N  WF=0 WT=12 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\env.txt"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=83 BI=25 HT=0 HN=0 HF=0 HC=4
+WINDOW: 24 30 1482 438 -1 -1 N  WF=0 WT=9 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\jazz\buildsystem\buildagent\startbfa.sh.bak"
+VIEW: LN=.1154 CL=45 LE=0 CX=45 CY=17 WI=22 BI=36 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 1482 338 -1 -1 N  WF=0 WT=8 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\jazz\buildsystem\readme.txt"
+VIEW: LN=.5552 CL=1 LE=0 CX=1 CY=12 WI=73 BI=37 HT=0 HN=0 HF=0 HC=4
+WINDOW: 96 120 1482 326 -1 -1 N  WF=0 WT=13 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\go.ksh"
+VIEW: LN=.2 CL=124 LE=0 CX=124 CY=1 WI=249 BI=5 HT=0 HN=0 HF=0 HC=4
+WINDOW: 48 60 1482 485 -1 -1 N  WF=0 WT=14 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\ls.txt"
+VIEW: LN=.1555 CL=67 LE=0 CX=67 CY=16 WI=78 BI=21 HT=0 HN=0 HF=0 HC=4
+WINDOW: 24 30 1482 481 -1 -1 N  WF=0 WT=4 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\.profile"
+VIEW: LN=.936 CL=25 LE=0 CX=25 CY=12 WI=178 BI=20 HT=0 HN=0 HF=0 HC=4
+WINDOW: 144 0 1482 387 -1 -1 N  WF=0 WT=7 "Default Unicode Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\NewBuildHome\zBuild.xml"
+VIEW: LN=.1744 CL=52 LE=0 CX=52 CY=14 WI=185 BI=24 HT=0 HN=0 HF=0 HC=4
+WINDOW: 24 30 1482 485 -1 -1 N  WF=0 WT=11 "Default Fixed Font,10,0,1"
+BUFFER: BN="\temp\RTC4BLD\NewBuildAgentStuff\NewBuildHome\g.ksh"
+VIEW: LN=.2 CL=168 LE=61 CX=107 CY=1 WI=179 BI=33 HT=0 HN=0 HF=0 HC=4
+WINDOW: 96 120 1482 485 -1 -1 M  WF=0 WT=1 "Default Fixed Font,10,0,1"
+BUFFER: BN="..\..\CORE\ver8\v1ch05\ReflectionTest\ReflectionTest.java"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=160 BI=32 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+\temp\RTC4BLD\jazz\buildsystem\buildtoolkit\sub\com\ibm\team\repository\common\util\ObfuscationHelper.class
+\RTC\workspace\zBuild_Engine_2.2\nullmisc\clientCompCheck.out
+\temp\RTC4BLD\NewBuildAgentStuff\go.ksh
+\temp\RTC4BLD\NewBuildAgentStuff\NewBuildHome\zBuild.xml
+\temp\RTC4BLD\NewBuildAgentStuff\ls.txt
+\temp\RTC4BLD\NewBuildAgentStuff\.profile
+\temp\RTC4BLD\NewBuildAgentStuff\derby.log
+\temp\RTC4BLD\NewBuildAgentStuff\NewBuildHome\g.ksh
+..\..\CORE\ver8\v1ch05\ReflectionTest\ReflectionTest.java
+DEBUG: 0 0 0 0 5 0
+java.*
+javax.*
+com.sun.*
+com.ibm.*
+sun.*
+TBCLASS: 0 0

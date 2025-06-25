@@ -1,0 +1,37 @@
+[Global]
+CurrentProject=test.vpj
+[ProjectDates]
+test.vpj=20090305233303651
+[ActiveConfig]
+test.vpj=Debug
+[State]
+SCREEN: 1400 1050 5 467 1395 551 0 0 M 0 0 0 0 1176 911 0
+CWD: ..\TreeComp
+BUFFER: BN="TreeComp.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=4720 TL=0 MLL=0 ASE=0 LNL=6 LCF=2 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.2833 CL=1 LE=0 CX=0 CY=9 WI=5 BI=16 HT=0 HN=0 HF=0 HC=4
+WINDOW: 21 26 911 492 -1 -1 M  WF=0 WT=2 "Lucida Console,10,1,1"
+BUFFER: BN="TreeComp.java"
+VIEW: LN=.2833 CL=1 LE=0 CX=8 CY=9 WI=118 BI=16 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+..\..\..\..\F\Clients\Ver6.1\R6.1_041108\com\ibm\sdwb\build390\library\ChangeRequest.java
+..\..\..\..\F\Clients\Ver6.1\R6.1_041108\com\ibm\sdwb\build390\library\Changeset.java
+..\..\..\..\F\Clients\Ver6.1\R6.1_041108\com\ibm\sdwb\build390\process\steps\ServicePackagingVerification.java
+..\..\..\..\F\Clients\Ver6.1\R6.1_042208\com\ibm\sdwb\build390\MBConstants.java
+..\..\ListTree\ListTree.java
+TreeComp.bat
+042208VER\TreeComp.java
+TreeComp.java
+..\..\..\..\F\PROBS\Kathy\030909\serviceOps.log
+DEBUG: 0 1 4 0 5 0
+.
+00TreeCompcompTreeFilesTreeComp.java12510
+00TreeCompcompTreeFilesTreeComp.java14210
+00TreeCompcompTreeFilesTreeComp.java12710
+00TreeCompcompTreeFilesTreeComp.java12910
+java.*
+javax.*
+com.sun.*
+com.ibm.*
+sun.*
+TBCLASS: 0 0
