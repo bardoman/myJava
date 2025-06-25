@@ -1,4 +1,6 @@
 
+import java.util.Random;
+
 public class mult3DMat
 {
 
@@ -6,11 +8,18 @@ public class mult3DMat
 
 public static void main(String args[])
 {
-int[][][] matA={{{0,1,2},{3,4,5},{6,7,8}},{{0,1,2},{3,4,5},{6,7,8}},{{0,1,2},{3,4,5},{6,7,8}}};
+	
+int[][][] matA;//={{{0,1,2},{3,4,5},{6,7,8}},{{0,1,2},{3,4,5},{6,7,8}},{{0,1,2},{3,4,5},{6,7,8}}};
 
-int[][][] matB={{{0,1,2},{3,4,5},{6,7,8}},{{0,1,2},{3,4,5},{6,7,8}},{{0,1,2},{3,4,5},{6,7,8}}};
+int[][][] matB;//={{{0,1,2},{3,4,5},{6,7,8}},{{0,1,2},{3,4,5},{6,7,8}},{{0,1,2},{3,4,5},{6,7,8}}};
 int[][][] matC;
 int[][][] matD;
+
+matA=rand3DMat(3);
+matB=rand3DMat(3);
+     print3DMat(matA);
+     print3DMat(matB);
+
 
    matC=multiply3DMatrices(matA,matB);
   
@@ -22,7 +31,21 @@ int[][][] matD;
 
    
 }
-
+  public static int[][][] rand3DMat(int size) {
+	  Random random = new Random(); 
+   
+  int[][][] tmp = new int[size][size][size];
+         
+   for (int x = 0; x < size; x++) { 
+            for (int y = 0; y < size; y++) { 
+                for (int z = 0; z < size; z++) { 
+                    tmp[x][y][z]=random.nextInt(100);
+                }
+            }
+        }	
+	  return tmp;
+  }
+  
   public static void print3DMat(int[][][] mat) {
    int depth = mat.length;
         int rowsA = mat[0].length;
