@@ -8,6 +8,12 @@ public class FFTExample {
     public static void main(String[] args) {
         // Sample data (must be a power of 2 in length)
         double[] data = {1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0};
+        
+        System.out.println("Data:");
+        for(double dbl:data)
+        {
+			System.out.println(dbl);
+		}
 
         // Create a FastFourierTransformer instance
         FastFourierTransformer transformer = new FastFourierTransformer(DftNormalization.STANDARD);
