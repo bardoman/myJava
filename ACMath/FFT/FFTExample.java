@@ -7,7 +7,7 @@ public class FFTExample {
 
     public static void main(String[] args) {
         // Sample data (must be a power of 2 in length)
-        double[] data = {1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0};
+        double[] data = {1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 9.0, 6.0};
         
         System.out.println("Data:");
         for(double dbl:data)
