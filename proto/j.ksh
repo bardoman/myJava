@@ -1,0 +1,3 @@
+
+
+javac -cp "."  proto.java
