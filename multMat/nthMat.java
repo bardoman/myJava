@@ -21,14 +21,17 @@ public class nthMat {
 //*********************************************************
         
         ArrayList<ArrayList> base2 = new ArrayList<>();
-        alocListRecurs(base2,10);
+        
+        size=5;
+        
+        alocListRecurs(base2,size);
                 
         System.out.println("****alocListRecurs  ****base2:"); 
         System.out.println(base2);
         
         System.out.println("********traverse base2:"); 
         
-    //    traverseArrayList(base2);
+        traverseArrayList(base2);
     }
  
     public static void traverseArrayList(List<?> list){
@@ -43,16 +46,14 @@ public class nthMat {
         }
     }
     
-/*    public static void initList(ArrayList<ArrayList> list)
-    {
-		Iterator<Integer> iterator = list.iterator();
-    while (iterator.hasNext()) {
-        ArrayList subList = iterator.next();
-        
-    }
-		
+   public static void initList(ArrayList<Integer> list, int size)
+   {	
+        for(int i=0;i<size;i++){
+			
+        list.add(i);     
+        }		
 	}
-*/	
+	
 	
     public static void initIntArray(Integer[] ary)
     {
@@ -65,11 +66,14 @@ public class nthMat {
 	}
 		  
      public static void alocListRecurs(ArrayList<ArrayList> list, int count) {
+         
             if (count == 0) {
                 return;
             }
 
-           ArrayList tmp=new ArrayList<Integer>(Arrays.asList(intArray));
+          // ArrayList tmp=new ArrayList<Integer>(Arrays.asList(intArray));
+          ArrayList tmp=new ArrayList<Integer>(size);
+          initList(tmp, size);
 		
            list.add(tmp);
            
