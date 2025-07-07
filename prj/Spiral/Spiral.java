@@ -41,9 +41,11 @@ public class Spiral extends JFrame {
 
                 pts = getPtList(300, inc, rot);
 
-                drawList(g2, pts, WIN_WIDTH/2, WIN_HEIGHT/2);
-
-                drawListX(g2, pts, WIN_WIDTH/2, WIN_HEIGHT/2);
+               // drawList(g2, pts, WIN_WIDTH/2, WIN_HEIGHT/2);
+               // drawListX(g2, pts, WIN_WIDTH/2, WIN_HEIGHT/2);
+                drawList(g2, pts, WIN_WIDTH, WIN_HEIGHT);
+                drawListX(g2, pts, WIN_WIDTH, WIN_HEIGHT);
+                
 
                 rot += rotInt/2;
             }

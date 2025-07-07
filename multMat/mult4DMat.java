@@ -22,8 +22,11 @@ int[][][][] matB=rand4DMat(size);
 int[][][][] matC=rand4DMat(size);           
 	              
 System.out.println("mult4DMat:\n");
-     print4DMat(matA,"matA");
-     print4DMat(matB,"matB");
+//System.out.println("matA:"+matA);
+    print4DMat(matA,"matA");
+//System.out.println("matB:"+matA);
+
+    print4DMat(matB,"matB");
 
 
    matC=mult4DMat(matA,matB);
@@ -41,7 +44,7 @@ System.out.println("mult4DMat:\n");
             for (int y = 0; y < size; y++) { 
                 for (int z = 0; z < size; z++) { 
                 for (int q = 0; q < size; q++) { 
-                    tmp[x][y][z][q]=random.nextInt(10);
+                    tmp[x][y][z][q]=random.nextInt(size);
                 }
             }
 		}
@@ -54,20 +57,27 @@ System.out.println("mult4DMat:\n");
 	   System.out.println(msg);
 	   int size = mat.length;
 	  System.out.println("size="+size);
-            
+   System.out.print("[");         
    for (int x = 0; x < size; x++) { 
-            for (int y = 0; y < size; y++) { 
+	    System.out.print("[");   
+            for (int y = 0; y < size; y++) {  
+				System.out.print("[");   
                 for (int z = 0; z < size; z++) { 
+					 System.out.print("[");   
 					for (int q = 0; q < size; q++) { 
                     System.out.print(mat[x][y][z][q]);
                          System.out.print(",");
                 }
-                
+                 System.out.println ("]");   
             }
-            System.out.println();
+            System.out.print("]"); 
+          //  System.out.println();
 		  }
+		  System.out.print("]"); 
+		//  System.out.println();	
         }
-        System.out.println();	
+        System.out.println("]"); 
+      //  System.out.println();	
   }
   
      public static int[][][][]  mult4DMat(int[][][][] matA, int[][][][] matB) {
