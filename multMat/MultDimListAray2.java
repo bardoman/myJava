@@ -40,6 +40,7 @@ public class MultDimListAray2 {
         
         System.out.println("5DL[1][1][1][1][0]:"+((List)((List)((List)((List)fiveDimList.get(1)).get(1)).get(1)).get(1)).get(0));
         System.out.println("5DL[1][1][1][1][1]:"+((List)((List)((List)((List)fiveDimList.get(1)).get(1)).get(1)).get(1)).get(1));
+        System.out.println("5DL[1][1][1][1][2]:"+((List)((List)((List)((List)fiveDimList.get(1)).get(1)).get(1)).get(1)).set(2, 44));
         System.out.println("5DL[1][1][1][1][2]:"+((List)((List)((List)((List)fiveDimList.get(1)).get(1)).get(1)).get(1)).get(2));
 
         // You can now access elements (requires casting based on the depth)
